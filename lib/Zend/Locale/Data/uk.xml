@@ -3612,6 +3612,7 @@
 				<displayName count="many">гривень</displayName>
 				<displayName count="one">гривня</displayName>
 				<displayName count="other">гривні</displayName>
+                                <symbol>грн.</symbol>
 			</currency>
 			<currency type="UAK">
 				<displayName>Український карбованець</displayName>

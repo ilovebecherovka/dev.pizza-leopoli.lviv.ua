@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: #fedda5 url(../images/html-bg.png) repeat-x 0 50px;
+}
+body {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #9d4620;
+    background: url(../images/body-bg.jpg) no-repeat 50% 50px;
+    line-height: 1;
+}
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+/* UI
+   ========================================================================== */
+h1{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #9d4620;
+}
+a:hover {
+    color: #531a01;
+}
+ul {
+    list-style: none;
+}
+img{
+    display: block;
+}
+input {
+    border: 1px solid #eee;
+    padding: 10px;
+}
+button {
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #fff;
+}
+:focus {
+    outline:none;
+}
+/* Header
+   ========================================================================== */
+#quick-access {
+  height: 50px;
+  line-height: 50px;
+}
+#quick-access .links {
+    float: right;
+}
+#quick-access .links li {
+  float: left;
+  margin-left: 15px;
+}
+#site-name {
+    font:  italic normal 16px Georgia,serif;
+    float: left;
+    color: #FDE1D7;
+    margin-top: 50px;
+}
+#logo {
+    width: 220px;
+    margin: 10px auto 0;
+    display: block;
+}
+.welcome-msg {
+  font:  italic normal 13px/50px Georgia,serif;   
+}
+#search_mini_form {
+    float: right;
+    margin-top: 40px;
+}
+
+/* Content
+   ========================================================================== */
+main {
+    width: 670px;
+    float: left;
+}
+#right-sidebar {
+    width: 260px;
+    float: right;
+}

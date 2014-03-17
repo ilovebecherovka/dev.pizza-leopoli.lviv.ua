@@ -1,0 +1,30 @@
+<header id="header">
+    <div id="quick-access">
+        <?php echo $this->getChildHtml('topLinks') ?>         
+        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+        <?php echo $this->getChildHtml('store_language') ?>
+    </div>
+    <?php if ($this->getIsHomePage()):?>
+        <h1 id="site-name">
+           <?php echo $this->getLogoAlt() ?>
+        </h1>
+    <?php else:?>
+        <strong id="site-name"><?php echo $this->getLogoAlt() ?></strong>
+    <?php endif;?>     
+
+    <?php echo $this->getChildHtml('topSearch') ?>
+     <a id="logo" href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">
+        <img src="<?php echo $this->getLogoSrc() ?>"  width="220" height="102" alt="<?php echo $this->getLogoAlt() ?>" />
+     </a>  
+    <?php echo $this->getChildHtml('topContainer'); ?>
+</header>
+<?php echo $this->getChildHtml('topMenu') ?>
+<div id="slider">
+    <div class="items" style="position: relative; width: 909px; height: 263px; overflow: hidden;">
+        <img src="img/media/slide-1.jpg" width="909" height="263" alt="" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 1; width: 909px; height: 263px;">
+        <img src="img/media/slide-1.jpg" width="909" height="263" alt="" style="position: absolute; top: 0px; left: -909px; display: none; z-index: 3; opacity: 1; width: 909px; height: 263px;">
+        <img src="img/media/slide-1.jpg" width="909" height="263" alt="" style="position: absolute; top: 0px; left: -909px; display: none; z-index: 3; opacity: 1; width: 909px; height: 263px;">
+    </div>
+    <span class="prev">&nbsp;</span>
+    <span class="next">&nbsp;</span>			
+</div>

@@ -48,3 +48,5 @@
 "Wrong attribute set ID","Невірний ID набору атрибутів"
 "Wrong entity ID","Невірний ID об'єкту"
 "Yes","Так"
+
+"For internal use. Must be unique with no spaces. Maximum length of attribute code must be less then %s symbols","Для внутрішнього використання. Значення повинно бути унікальним і не включати пробіли. Максимальне значення атрибуту не повинно перевищувати %s символів"

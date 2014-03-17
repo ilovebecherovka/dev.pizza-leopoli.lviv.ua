@@ -46,6 +46,14 @@ button {
 :focus {
     outline:none;
 }
+::selection {
+	background: #d29077;
+	color: #F2DCBB;
+}
+::-moz-selection {
+	background: #d29077;
+	color: #F2DCBB;
+}
 /* Header
    ========================================================================== */
 #quick-access {
@@ -78,9 +86,41 @@ button {
     margin-top: 40px;
 }
 
+/* Slider
+   ========================================================================== */
+#slider {
+    position: relative;
+    margin-bottom: 13px;
+}
+#slider .bg {
+    background: url(../images/slider-bg.png) no-repeat 0 0;
+    padding: 35px 36px 43px 15px;
+    z-index: 1;
+    height: 263px;
+    position: relative;
+}
+#slider .prev,
+#slider .next {
+    width: 55px;
+    height: 54px;
+    background: url(../images/slider-nav.png) no-repeat 0 0;
+    cursor: pointer;
+    position: absolute;
+    left: -37px;
+    top: 123px;
+}
+#slider .next {
+    background-position: 100% 0;
+    left: auto;
+    right: -31px;
+}
+
 /* Content
    ========================================================================== */
-main {
+#main-container {
+    overflow: hidden;
+}
+#main {
     width: 670px;
     float: left;
 }

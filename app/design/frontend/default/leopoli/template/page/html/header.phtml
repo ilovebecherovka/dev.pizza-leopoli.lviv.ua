@@ -18,13 +18,14 @@
      </a>  
     <?php echo $this->getChildHtml('topContainer'); ?>
 </header>
-<?php echo $this->getChildHtml('topMenu') ?>
+<?php if ($this->getIsHomePage()):?>
 <div id="slider">
-    <div class="items" style="position: relative; width: 909px; height: 263px; overflow: hidden;">
-        <img src="img/media/slide-1.jpg" width="909" height="263" alt="" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 1; width: 909px; height: 263px;">
-        <img src="img/media/slide-1.jpg" width="909" height="263" alt="" style="position: absolute; top: 0px; left: -909px; display: none; z-index: 3; opacity: 1; width: 909px; height: 263px;">
-        <img src="img/media/slide-1.jpg" width="909" height="263" alt="" style="position: absolute; top: 0px; left: -909px; display: none; z-index: 3; opacity: 1; width: 909px; height: 263px;">
+    <div class="bg">
+        
     </div>
-    <span class="prev">&nbsp;</span>
-    <span class="next">&nbsp;</span>			
+    <span class="prev"></span>
+    <span class="next"></span>
 </div>
+<?php endif;?>
+
+<?php echo $this->getChildHtml('topMenu') ?>

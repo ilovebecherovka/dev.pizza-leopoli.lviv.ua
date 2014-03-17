@@ -34,6 +34,7 @@
 "Search entire store here...","Пошук по крамниці..."
 "Search results for '%s'","Результати пошуку для '%s'"
 "Search results for: '%s'","Результати пошуку для: '%s'"
+"Search:","Пошук:"
 "Subscribe to Feed","Subscribe to Feed"
 "There are no search terms available.","Пошукові умови відсутні."
 "Yes","Yes"
@@ -46,3 +47,4 @@
 "Search Terms","Search Terms"
 "Popular Search Terms","Popular Search Terms"
 "There are no search terms available.","There are no search terms available."
+"Catalog Search Index","Індекси пошуку в каталозі"

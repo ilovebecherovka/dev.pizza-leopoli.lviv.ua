@@ -85,7 +85,21 @@ button {
     float: right;
     margin-top: 40px;
 }
-
+#nav {
+    margin: 26px 0 2px 99px;
+    overflow: hidden;    
+}
+#nav a {
+    font: italic 18px/36px Georgia, serif;
+    height: 36px;
+    display: block;
+    padding-left: 30px;
+}
+#nav .active a {
+    background:url(../images/menu-hover.png) no-repeat 0 0;
+    color: #451401;
+    text-decoration: none
+}
 /* Slider
    ========================================================================== */
 #slider {

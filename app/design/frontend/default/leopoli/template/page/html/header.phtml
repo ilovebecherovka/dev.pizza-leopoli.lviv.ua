@@ -16,7 +16,8 @@
      <a id="logo" href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">
         <img src="<?php echo $this->getLogoSrc() ?>"  width="220" height="102" alt="<?php echo $this->getLogoAlt() ?>" />
      </a>  
-    <?php echo $this->getChildHtml('topContainer'); ?>
+    <?php echo $this->getChildHtml('topContainer') ?>
+    <?php echo $this->getChildHtml('topMenu') ?>
 </header>
 <?php if ($this->getIsHomePage()):?>
 <div id="slider">
@@ -27,5 +28,3 @@
     <span class="next"></span>
 </div>
 <?php endif;?>
-
-<?php echo $this->getChildHtml('topMenu') ?>

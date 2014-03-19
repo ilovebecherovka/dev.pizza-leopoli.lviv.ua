@@ -3,14 +3,12 @@
     padding: 0;
 }
 html {
-    background: #F3ECE6 url(../images/html-bg.png) repeat-x 0 50px;
+    background: #f3debc url(../images/html-bg.jpg) repeat-x 0 50px;
 }
 body {
-    font-size: 12px;
-    font-family: Arial, sans-serif;
-    color: #9d4620;
+    font: 12px/1 Georgia, serif;
+    color: #421701;
     background: url(../images/body-bg.jpg) no-repeat 50% 50px;
-    line-height: 1;
 }
 #wrapper {
     width: 960px;
@@ -18,7 +16,7 @@ body {
 }
 /* UI
    ========================================================================== */
-h1,h2{
+h1,h2 {
     margin: 0;
     font-weight: normal;
 }
@@ -26,17 +24,16 @@ h1,h2{
     font-size: 25px;
     line-height: 26px;
     margin-bottom: 20px;
-    color: #421301;
     font-style: normal;
-    border-bottom: 2px dotted #9e593e;
+    border-bottom: 2px dotted #7a2a01;
     padding-bottom: 5px;
 }
 a {
     text-decoration: none;
-    color: #9d4620;
+    color: #7a2a01;
 }
 a:hover {
-    color: #531a01;
+    color: #421701;
 }
 ul {
     list-style: none;
@@ -45,8 +42,9 @@ img{
     display: block;
 }
 input {
-    border: 1px solid #eee;
+    border: 1px solid #c99479;
     padding: 10px;
+    background: #f9ecd9;
 }
 button {
     padding: 10px;
@@ -70,16 +68,19 @@ button {
   line-height: 50px;
 }
 #quick-access .links {
-    float: right;
+  float: right;
+  font-family: Tahoma, serif;
 }
 #quick-access .links li {
   float: left;
   margin-left: 15px;
 }
 #site-name {
-    font:  italic normal 16px Georgia,serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
     float: left;
-    color: #FDE1D7;
+    color: #c9784f;
     margin-top: 50px;
 }
 #logo {
@@ -88,7 +89,7 @@ button {
     display: block;
 }
 .welcome-msg {
-  font:  italic normal 13px/50px Georgia,serif;   
+  font-style: italic;   
 }
 #search_mini_form {
     float: right;
@@ -105,8 +106,8 @@ button {
     padding-left: 30px;
 }
 #nav .active a {
-    background:url(../images/menu-hover.png) no-repeat 0 0;
-    color: #451401;
+    background: url(../images/menu-hover.png) no-repeat 0 0;
+    color: #421701;
     text-decoration: none
 }
 /* Slider
@@ -144,13 +145,14 @@ button {
 }
 .breadcrumbs {
     margin-bottom: 20px;
+    color: #7a2a01;
 }
 .breadcrumbs li {
     display: inline;
     font-family: Georgia,serif;
 }
 .breadcrumbs a {
-    color: #451401;
+    color: #421701;
 }
 /* Content
    ========================================================================== */
@@ -169,10 +171,10 @@ button {
 /* Tollbar
    ========================================================================== */
 .toolbar {
-    background: #ffedce;
     border: 1px dashed #c1b091;
     border-radius: 3px;
     padding: 10px;
+    box-shadow: 0 0 0 3px #ead0a1 inset;
 }
 .toolbar .pager {
     
@@ -182,7 +184,7 @@ button {
    ========================================================================== */
 .category-image {
     padding: 3px;
-    border: 1px dashed #c1b091;
+    border: 1px dashed  #9d917a;
     border-radius: 3px;
     background: #ead0a1;
     margin-bottom: 20px;
@@ -194,7 +196,7 @@ button {
 .products-grid li {
     float: left;
     margin: 0 0 20px 20px;
-    border-bottom: 2px dotted #9E593E;
+    border-bottom: 2px dotted #7a2a01;
 }
 .product-name {
     font: italic 20px Georgia, serif;
@@ -215,7 +217,7 @@ button {
 .product-image {
     background: #ead0a1;
     padding: 3px;
-    border: 1px dashed #c1b091;
+    border: 1px dashed #9d917a;
     border-radius: 3px;
     display: block;
 }

@@ -23,7 +23,7 @@
 "Retrieve stock data","Retrieve stock data"
 "Retrieve stock data by product ids","Retrieve stock data by product ids"
 "Rule price","Ціна для правила"
-"Set Items' Status to be In Stock When Order is Cancelled","Міняти статус товару на "є в наявності", після відміни замовлення"
+"Set Items' Status to be In Stock When Order is Cancelled","Міняти статус товару на ""є в наявності"", після відміни замовлення"
 "Some of the products are currently out of stock","Some of the products are currently out of stock"
 "Some of the products can not be ordered in requested quantity","Some of the products can not be ordered in requested quantity"
 "Some of the products cannot be ordered in the requested quantity","Some of the products cannot be ordered in the requested quantity"

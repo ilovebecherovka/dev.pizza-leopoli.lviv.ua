@@ -45,6 +45,14 @@ input {
     border: 1px solid #c99479;
     padding: 10px;
     background: #f9ecd9;
+    color: #421701;
+    font-size: 12px;
+}
+select{
+    background: #f9ecd9; 
+    border: 1px solid #c99479;
+    color: #421701;
+    padding: 7px;
 }
 button {
     padding: 10px;
@@ -170,18 +178,54 @@ button {
 }
 /* Tollbar
    ========================================================================== */
+/*
 .toolbar {
     border: 1px dashed #c1b091;
     border-radius: 3px;
     padding: 10px;
     box-shadow: 0 0 0 3px #ead0a1 inset;
 }
+*/
 .toolbar .pager {
     
 }
 
 /* Product item in catalog
    ========================================================================== */
+.view-mode {
+    float: left;
+}
+.view-mode * {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    background: #f2debc;
+    border: 1px dashed #c1b091;
+    font-size: 0;
+    text-indent: -9999px;
+    float: left;
+    background: url(../images/view-mode2.png) no-repeat 0 0;
+    margin-right: 6px;
+}
+.view-mode a.grid {
+background-position: 0 -34px;     
+}
+.view-mode a.list {
+    background-position: -34px -34px;    
+}
+.view-mode a.list:hover,
+.view-mode span.list {
+ background-position: -34px 0;   
+}
+.view-mode a.grid:hover {
+    background-position: 0 0;    
+}
+.sort-by {
+    line-height: 38px;
+}
+.sort-by img {
+    display: inline;
+}
 .category-image {
     padding: 3px;
     border: 1px dashed  #9d917a;
@@ -220,6 +264,9 @@ button {
     border: 1px dashed #9d917a;
     border-radius: 3px;
     display: block;
+}
+.product-image img {
+    
 }
 .actions {
     position: absolute;

@@ -523,7 +523,7 @@
 "Skip import row, required field ""%s"" not defined","Пропуск імпортованої стрічки, обов&#39;язкове поле ""%s"" не задане"
 "Skip import row, store ""%s"" field not exists","Пропуск імпортованої стрічки, поле ""%s"" групи магазинів не існує"
 "Sort Order","Порядок сортування"
-"Sort by","Сортування"
+"Sort By","Сортування"
 "Source Model","Модель вихідного коду"
 "Special Price:","Спеціальна ціна:"
 "Starting at:","Починаючи з:"

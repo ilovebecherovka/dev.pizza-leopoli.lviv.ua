@@ -52,7 +52,10 @@ select{
     background: #f9ecd9; 
     border: 1px solid #c99479;
     color: #421701;
-    padding: 7px;
+    padding: 0 7px;
+}
+select option {
+    padding-right: 10px;
 }
 button {
     padding: 10px;
@@ -192,6 +195,12 @@ button {
 
 /* Product item in catalog
    ========================================================================== */
+.toolbar .sorter {
+    flaot: left;
+}
+.toolbar .pager {
+    float: right;
+}
 .view-mode {
     float: left;
 }

@@ -10,7 +10,8 @@ body {
     color: #421701;
     background: url(../images/body-bg.jpg) no-repeat 50% 50px;
 }
-#wrapper {
+#wrapper,
+.center{
     width: 960px;
     margin: 0 auto;
 }
@@ -43,7 +44,6 @@ img{
 }
 input {
     border: 1px solid #c99479;
-    padding: 10px;
     background: #f9ecd9;
     color: #421701;
     font-size: 12px;
@@ -58,7 +58,6 @@ select option {
     padding-right: 10px;
 }
 button {
-    padding: 10px;
     border: 0 none;
 }
 :focus {
@@ -293,4 +292,25 @@ background-position: 0 -34px;
     text-align: center;
     font: italic 15px  Georgia, serif;
     padding: 5px 0 12px;
+}
+
+/* Footer
+   ========================================================================== */
+#footer {
+    background: url(../images/footer-top-bg.png) repeat-x 0 0;
+    padding-top: 34px;
+    line-height: 18px;
+}
+#footer a {
+    color: #c9784f;
+}
+#footer .top-block {
+    background: #7a2a01;
+    color: #f2dcbb;
+    padding: 10px 0 20px;
+}
+#footer .bot-block {
+    height: 47px;
+    line-height: 60px;
+    background: url(../images/footer-bot-bg.png) repeat-x 0 0;
 }

@@ -26,10 +26,10 @@
  */
 -->
 <layout version="0.1.0">
+    
 <!--
 Default layout, loads most of the pages
 -->
-
     <default translate="label" module="page">
         <label>All Pages</label>
         <block type="page/html" name="root" output="toHtml" template="page/2columns-right.phtml">

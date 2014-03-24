@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <remove name="paypal.partner.right.logo"/>      
+    </default>
+</layout>

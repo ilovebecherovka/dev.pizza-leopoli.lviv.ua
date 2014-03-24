@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: #f3debc url(../images/html-bg.jpg) repeat-x 0 50px;
+}
+body {
+    font: 12px/1 Georgia, serif;
+    color: #421701;
+    background: url(../images/body-bg.jpg) no-repeat 50% 50px;
+    cursor: default;
+}
+#wrapper,
+.center{
+    width: 960px;
+    margin: 0 auto;
+}
+/* UI
+   ========================================================================== */
+h1,h2 {
+    margin: 0;
+    font-weight: normal;
+}
+.page-title {
+    font-size: 25px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    font-style: normal;
+    border-bottom: 2px dotted #7a2a01;
+    padding-bottom: 5px;
+}
+a {
+    text-decoration: none;
+    color: #7a2a01;
+}
+a:hover {
+    color: #421701;
+}
+ul, ol {
+    list-style: none;
+}
+img{
+    display: block;
+}
+input {
+    border: 1px solid #c99479;
+    background: #f9ecd9;
+    color: #421701;
+    font-size: 12px;
+}
+select{
+    background: #f9ecd9; 
+    border: 1px solid #c99479;
+    color: #421701;
+    padding: 0 7px;
+}
+select option {
+    padding-right: 10px;
+}
+button {
+    border: 0 none;
+}
+:focus {
+    outline:none;
+}
+::selection {
+	background: #d29077;
+	color: #F2DCBB;
+}
+::-moz-selection {
+	background: #d29077;
+	color: #F2DCBB;
+}
+/* Header
+   ========================================================================== */
+#quick-access {
+  height: 50px;
+  line-height: 50px;
+}
+#quick-access .links {
+  float: right;
+  font-family: Tahoma, serif;
+}
+#quick-access .links li {
+  float: left;
+  margin-left: 15px;
+}
+#site-name {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    float: left;
+    color: #c9784f;
+    margin-top: 50px;
+}
+#logo {
+    width: 220px;
+    margin: 10px auto 0;
+    display: block;
+}
+.welcome-msg {
+  font-style: italic;   
+}
+#search_mini_form {
+    float: right;
+    margin-top: 40px;
+}
+#nav {
+    margin: 26px 0 2px 99px;
+    overflow: hidden;    
+}
+#nav a {
+    font: italic 18px/36px Georgia, serif;
+    height: 36px;
+    display: block;
+    padding-left: 30px;
+}
+#nav .active a {
+    background: url(../images/menu-hover.png) no-repeat 0 0;
+    color: #421701;
+    text-decoration: none
+}
+/* Slider
+   ========================================================================== */
+#slider {
+    position: relative;
+    margin-bottom: 13px;
+}
+#slider .bg {
+    background: url(../images/slider-bg.png) no-repeat 0 0;
+    padding: 35px 36px 43px 15px;
+    z-index: 1;
+    height: 263px;
+    position: relative;
+}
+#slider .prev,
+#slider .next {
+    width: 55px;
+    height: 54px;
+    background: url(../images/slider-nav.png) no-repeat 0 0;
+    cursor: pointer;
+    position: absolute;
+    left: -37px;
+    top: 123px;
+}
+#slider .next {
+    background-position: 100% 0;
+    left: auto;
+    right: -31px;
+}
+#text-block {
+    width: 960px;
+    height: 112px;
+    background: url(../images/text-block.png) no-repeat 0 0;
+}
+.breadcrumbs {
+    margin-bottom: 20px;
+    color: #7a2a01;
+}
+.breadcrumbs li {
+    display: inline;
+    font-family: Georgia,serif;
+}
+.breadcrumbs a {
+    color: #421701;
+}
+/* Content
+   ========================================================================== */
+#main-container {
+    overflow: hidden;
+}
+#main {
+    width: 670px;
+    float: left;
+    overflow: hidden;
+}
+#right-sidebar {
+    width: 260px;
+    float: right;
+}
+/* Tollbar
+   ========================================================================== */
+/*
+.toolbar {
+    border: 1px dashed #c1b091;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0 0 0 3px #ead0a1 inset;
+}
+*/
+.toolbar .pager {
+    
+}
+
+/* Product item in catalog
+   ========================================================================== */
+.toolbar .sorter {
+    flaot: left;
+}
+.toolbar .pager {
+    float: right;
+}
+.view-mode {
+    float: left;
+}
+.view-mode * {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    background: #f2debc;
+    border: 1px dashed #c1b091;
+    font-size: 0;
+    text-indent: -9999px;
+    float: left;
+    background: url(../images/view-mode2.png) no-repeat 0 0;
+    margin-right: 6px;
+}
+.view-mode a.grid {
+background-position: 0 -34px;     
+}
+.view-mode a.list {
+    background-position: -34px -34px;    
+}
+.view-mode a.list:hover,
+.view-mode span.list {
+ background-position: -34px 0;   
+}
+.view-mode a.grid:hover {
+    background-position: 0 0;    
+}
+.sort-by {
+    line-height: 38px;
+}
+.sort-by img {
+    display: inline;
+}
+.category-image {
+    padding: 3px;
+    border: 1px dashed  #9d917a;
+    border-radius: 3px;
+    background: #ead0a1;
+    margin-bottom: 20px;
+}
+.products-grid {
+    overflow: hidden;
+    margin-left: -20px;
+}
+.products-grid li {
+    float: left;
+    width: 210px;
+    margin: 0 0 20px 20px;
+    border-bottom: 2px dotted #7a2a01;
+}
+
+.product-name {
+    font: italic 20px Georgia, serif;
+    line-height:60px;
+    padding-left: 10px
+}
+.product-name a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height:1;
+}
+.product-tizer {
+    position:relative;
+}
+.product-tizer button {
+    width: 50px;
+    height: 41px;
+    background: url(../images/add-to-cart.png) no-repeat 0 0;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.product-image {
+    background: #ead0a1;
+    padding: 3px;
+    border: 1px dashed #9d917a;
+    border-radius: 3px;
+    display: block;
+}
+.product-image img {
+    
+}
+.actions {
+    position: absolute;
+    width: 202px;
+    height: 152px;
+    top: 4px;
+    left: 4px;
+    background: rgba(0,0,0, 0.2);
+    display: none;
+}
+.product-tizer:hover .actions {
+    display: block;
+}
+.price-box {
+    text-align: center;
+    font: italic 15px  Georgia, serif;
+    padding: 5px 0 12px;
+}
+
+/* Footer
+   ========================================================================== */
+#footer {
+    background: url(../images/footer-top-bg.png) repeat-x 0 0;
+    padding-top: 34px;
+    line-height: 18px;
+}
+#footer a {
+    color: #c9784f;
+}
+#footer .top-block {
+    background: #7a2a01;
+    color: #f2dcbb;
+    padding: 10px 0 20px;
+}
+#footer .bot-block {
+    height: 47px;
+    line-height: 60px;
+    background: url(../images/footer-bot-bg.png) repeat-x 0 0;
+}

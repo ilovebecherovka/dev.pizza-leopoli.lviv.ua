@@ -1,0 +1,35 @@
+<header id="header">
+    <div id="quick-access">
+        <?php echo $this->getChildHtml('topLinks') ?>         
+        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+        <?php echo $this->getChildHtml('store_language') ?>
+    </div>
+    <?php if ($this->getIsHomePage()):?>
+        <h1 id="site-name">
+           <?php echo $this->getLogoAlt() ?>
+        </h1>
+    <?php else:?>
+        <strong id="site-name"><?php echo $this->getLogoAlt() ?></strong>
+    <?php endif;?>     
+        
+    <?php if(false) echo $this->getChildHtml('cart_header') ?>
+    <?php echo $this->getChildHtml('topSearch') ?>
+     <a id="logo" href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">
+        <img src="<?php echo $this->getLogoSrc() ?>"  width="220" height="102" alt="<?php echo $this->getLogoAlt() ?>" />
+     </a>  
+    <?php echo $this->getChildHtml('topContainer') ?>
+    <?php echo $this->getChildHtml('topMenu') ?>
+</header>
+<?php if ($this->getIsHomePage()):?>
+<div id="slider">
+    <div class="bg">
+        
+    </div>
+    <span class="prev"></span>
+    <span class="next"></span>
+</div>
+<?php else:?>
+<div id="text-block">
+    
+</div>
+<?php endif;?>

@@ -16,6 +16,9 @@ body {
     width: 960px;
     margin: 0 auto;
 }
+#wrapper {
+    margin-bottom: 45px;
+}
 
 
 /*sidebar - footer line-height:18px;*/
@@ -296,22 +299,11 @@ button {
 #pizza-hours p span {
     float: right;
 }
-/* Tollbar
-   ========================================================================== */
-.toolbar .pager {
-    
-}
 
 /* Product item in catalog
    ========================================================================== */
-.toolbar .sorter {
-    flaot: left;
-}
-.toolbar .pager {
-    float: right;
-}
 .view-mode {
-    float: left;
+   text-align: center;
 }
 .view-mode * {
     width: 30px;
@@ -321,7 +313,7 @@ button {
     border: 1px dashed #c1b091;
     font-size: 0;
     text-indent: -9999px;
-    float: left;
+    display: inline-block;
     background: url(../images/view-mode2.png) no-repeat 0 0;
     margin-right: 6px;
 }
@@ -410,6 +402,59 @@ background-position: 0 -34px;
     text-align: center;
     font: italic 15px  Georgia, serif;
     padding: 5px 0 12px;
+}
+
+/* Pager
+   ========================================================================== */
+.pages {
+    text-align: center;
+}
+.pages li {
+    display: inline-block;
+    border: 1px dashed #9d917a;
+    margin: 0 7px;
+    border-radius: 3px;
+}
+.pages a {
+    display: block;
+    text-decoration: none;
+}
+.pages span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 3px solid #ead0a1;
+    font-size: 18px;
+    font-style: italic;
+    display: block;
+}
+.pages .current span {
+   background: #9e5e3e;
+   color: #f2debc;
+}
+.pages a:hover {
+   background: #b6845e;
+   color: #f2debc;
+}
+.pages .next span,
+.pages .previous span {
+  font-size: 16px;
+  width: auto;
+  background: url(../images/pager-icons.png) no-repeat 0 0;
+}
+.pages .next span {
+    background-position: 100% 10px;
+    padding: 0 45px 0 17px;
+}
+.pages .next:hover span {
+    background-position: 100% -20px;
+}
+.pages .previous span {
+    background-position: 0 -52px;
+    padding: 0 17px 0 45px;
+}
+.pages .previous:hover span {
+    background-position: 0 -82px;
 }
 
 /* Footer

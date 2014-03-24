@@ -39,7 +39,7 @@
 <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
 <?php else: ?>
 <div id="category-products">
-    <?php echo $this->getToolbarHtml() ?>
+    <?php echo $this->getToolbarHtml() ?>   
     <?php // List mode ?>
     <?php if($this->getMode()!='grid'): ?>
     <?php $_iterator = 0; ?>
@@ -118,8 +118,6 @@
         <?php endforeach ?>
         <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
     <?php endif; ?>
-    <?php echo "dsdas"; ?>
-                <?php echo $this->getPagerHtml(); ?>
-
+    <?php echo $this->getToolbarBlock()->getPagerHtml(); ?>
 </div>
 <?php endif; ?>

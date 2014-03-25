@@ -50,6 +50,7 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>mage/cookies.js</script></action>
 
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
+                
                 <action method="addCss"><stylesheet>css/normalize.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
                 <action method="addItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>

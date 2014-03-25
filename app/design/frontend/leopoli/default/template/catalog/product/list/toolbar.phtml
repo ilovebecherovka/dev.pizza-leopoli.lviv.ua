@@ -34,7 +34,6 @@
 <?php if($this->getCollection()->getSize()): ?>
 <div class="toolbar">
     <?php if( $this->isExpanded() ): ?>
-    <div class="sorter">
         <?php if( $this->isEnabledViewSwitcher() ): ?>
         <div class="view-mode">
             <?php $_modes = $this->getModes(); ?>
@@ -49,7 +48,7 @@
             <?php endif; ?>
         </div>
         <?php endif; ?>
-    </div>
+        <?php echo $this->getPagerHtml(); ?>
     <?php endif; ?>
 </div>
 <?php endif ?>

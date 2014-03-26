@@ -27,7 +27,10 @@ body {
 h1,h2,h3,h4 {
     margin: 0;
     font-weight: normal;
-    color: #7a2a01;
+    color: #421701;
+}
+.product-name a {
+    color: #421701;    
 }
 .page-title {
     font-size: 25px;
@@ -180,9 +183,20 @@ button {
     right: -31px;
 }
 #text-block {
-    width: 960px;
+    width: 890px;
     height: 112px;
     background: url(../images/text-block.png) no-repeat 0 0;
+    color: #7a2a01;
+    line-height: 112px;
+    text-align: center;
+    font-style: italic;
+    padding: 0 40px;
+}
+#text-block p {
+    font-size: 20px;
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .breadcrumbs {
     margin-bottom: 20px;
@@ -445,11 +459,11 @@ background-position: 0 -34px;
     position: absolute;
     right: 0;
     top: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
 }
 
-.desc li {
+.std li {
     color: #9e5e3e;
     background: url(../images/bullet-style1.png) no-repeat 0 0;
     padding-left: 17px;
@@ -514,17 +528,29 @@ background-position: 0 -34px;
 .pages .previous:hover span {
     background-position: 0 -82px;
 }
-
 .product-img-box {
-    width: 309px;
     float: left;
+    margin-right: 20px;
 }
-.product-view .product-image-zoom {
+
+
+/* Product View
+   ========================================================================== */
+#product-view .price-box {
+    text-align: right;
+    font-size: 20px;
+}
+#product-view .product-image-zoom {
     width: 298px;
     height: 224px;
     position: relative;
     overflow: hidden;
 }
+
+.product-collateral {
+    clear: both;
+}
+ 
 
 /* Footer
    ========================================================================== */

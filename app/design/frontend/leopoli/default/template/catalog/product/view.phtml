@@ -37,7 +37,7 @@
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
 <div class="product-title-price">
-    <h1 class="page-title"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+   
 </div>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
 <div id="product-view">
@@ -54,17 +54,14 @@
         </div>
         
         <div class="product-shop">
-        <div class="product-shop">
+            <h1 class="product-name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
             <?php echo $this->getChildHtml('product_type_data') ?>
-
 
             <?php echo $this->getChildHtml('alert_urls') ?>
             <?php echo $this->getTierPriceHtml() ?>
             <?php echo $this->getChildHtml('extrahint') ?>
-
-      
             
-            <?php //echo $this->getReviewsSummaryHtml($_product, false, true)?>
+            <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
             <?php if ($this->canEmailToFriend() && false): ?>
                 <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
             <?php endif; ?>
@@ -101,8 +98,6 @@
             <?php endif;?>
 
         </div>
-
-        <div class="clearer"></div>
         <?php if ($_product->isSaleable() && $this->hasOptions()):?>
             <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
         <?php endif;?>

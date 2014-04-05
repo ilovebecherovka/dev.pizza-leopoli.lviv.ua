@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Panchyshyn_Helloworld>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Panchyshyn_Helloworld>
+    </modules>
+</config>

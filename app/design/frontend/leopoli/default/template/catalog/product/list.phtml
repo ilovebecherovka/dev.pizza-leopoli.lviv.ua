@@ -1,6 +1,7 @@
 <?php
     $_productCollection=$this->getLoadedProductCollection();
     $_helper = $this->helper('catalog/output');
+    $_catId = Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
 ?>
 <?php if(!$_productCollection->count()): ?>
 <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
@@ -8,7 +9,8 @@
 <div id="category-products">
     <?php echo $this->getToolbarHtml() ?>   
     <?php // List mode ?>
-    <?php if($this->getMode()!='grid'): ?>
+    <?php //if($this->getMode()!='grid'): ?>
+    <?php if($_catId == 3): ?>
     <?php $_iterator = 0; ?>
     <ol class="products-list" id="products-list">
     <?php foreach ($_productCollection as $_product): ?>

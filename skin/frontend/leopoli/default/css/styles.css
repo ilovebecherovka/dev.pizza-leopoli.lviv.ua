@@ -12,14 +12,13 @@ body {
     cursor: default;
 }
 #wrapper,
-.center{
+.center {
     width: 960px;
     margin: 0 auto;
 }
 #wrapper {
     margin-bottom: 45px;
 }
-
 
 /*sidebar - footer line-height:18px;*/
 /* GLOBAL
@@ -108,6 +107,9 @@ button {
 }
 .right {
     float: right;
+}
+fieldset {
+    
 }
 
 /* Header
@@ -348,9 +350,6 @@ button {
    text-align: center;
    float: left;
 }
-.toolbar .pages {
-    float: right;
-}
 .toolbar .pages li {
     margin: 0 0 0 12px
 }
@@ -367,7 +366,7 @@ button {
     background: url(../images/view-mode2.png) no-repeat 0 0;
     margin-right: 6px;
 }
-.view-mode a.grid {
+.view-mode a. {
 background-position: 0 -34px;     
 }
 .view-mode a.list {
@@ -446,6 +445,10 @@ background-position: 0 -34px;
 }
 /* Products List
 ===================*/
+.products-list {
+    margin-bottom: 20px;
+}
+
 .products-list .left {
     margin-right: 20px;
 }
@@ -454,8 +457,11 @@ background-position: 0 -34px;
     padding: 0 150px 0 230px;
 }
 .products-list .item {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding: 20px 0 22px;
+}
+.products-list .item:first-child {
+    border-top: 2px dotted #9e5e3e;
+    padding-top: 22px;
 }
 .products-list .product-name {
     margin-bottom: 15px;
@@ -545,9 +551,6 @@ background-position: 0 -34px;
     padding-left: 326px;
 }
 #product-view .price-box {
-    position: absolute;
-    right: 0;
-    top: 0;
     font-size: 20px;
 }
 #product-view .product-name {
@@ -555,7 +558,8 @@ background-position: 0 -34px;
 }
 .short-description {
     padding-right: 110px;
-    text-align: justify
+    text-align: justify;
+    margin-bottom: 15px;
 }
 #product-view .product-image-zoom {
     width: 298px;

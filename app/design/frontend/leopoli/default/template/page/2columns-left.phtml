@@ -8,17 +8,20 @@
 <div id="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
     <?php echo $this->getChildHtml('header') ?>
-    <div id="main-container" class="col1-layout">
+    <div id="main-container" class="col2-left-layout">
         <div id="breadcrumbs"><?php echo $this->getChildHtml('breadcrumbs') ?></div>
-        <div id="main">
+        <main id="main">
             <?php echo $this->getChildHtml('global_messages') ?>
             <?php echo $this->getChildHtml('content') ?>
-        </div>
+        </main>
+        <aside id="left-sidebar" class="sidebar">
+            <?php echo $this->getChildHtml('left') ?>
+        </aside>
     </div>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
 </div>
-<?php echo $this->getChildHtml('footer') ?>
-<?php echo $this->getChildHtml('global_cookie_notice') ?>
-<?php echo $this->getChildHtml('before_body_end') ?>
 <?php echo $this->getAbsoluteFooter() ?>
 </body>
 </html>

@@ -7,17 +7,17 @@
 <?php echo $this->getChildHtml('after_body_start') ?>
 <div id="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
-        <?php echo $this->getChildHtml('header') ?>
-        <div id="main-container" class="col2-right-layout">
-            <?php echo $this->getChildHtml('breadcrumbs') ?>
-            <main id="main">
-                <?php echo $this->getChildHtml('global_messages') ?>
-                <?php echo $this->getChildHtml('content') ?>
-            </main>
-            <aside id="right-sidebar">
-                <?php echo $this->getChildHtml('right') ?>
-            </aside>
-        </div>
+    <?php echo $this->getChildHtml('header') ?>
+    <div id="main-container" class="col2-right-layout">
+        <div id="breadcrumbs"><?php echo $this->getChildHtml('breadcrumbs') ?></div>
+        <main id="main">
+            <?php echo $this->getChildHtml('global_messages') ?>
+            <?php echo $this->getChildHtml('content') ?>
+        </main>
+        <aside id="right-sidebar" class="sidebar">
+            <?php echo $this->getChildHtml('right') ?>
+        </aside>
+    </div>
 </div>
 <?php echo $this->getChildHtml('footer') ?>
 <?php echo $this->getChildHtml('global_cookie_notice') ?>

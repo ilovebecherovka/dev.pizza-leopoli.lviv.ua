@@ -28,16 +28,47 @@ h1,h2,h3,h4 {
     font-weight: normal;
     color: #421701;
 }
+h2 {
+    font-style: italic;
+}
 .product-name a {
     color: #421701;    
 }
 .page-title {
+    border-bottom: 2px dotted #9e5e3e;
+    padding: 0 0 5px 20px;
+    margin-bottom: 20px;
+}
+.page-title h1  {
     font-size: 25px;
     line-height: 26px;
-    margin-bottom: 20px;
+
     font-style: normal;
-    border-bottom: 2px dotted #9e5e3e;
-    padding-bottom: 5px;
+}
+.title-buttons {
+    overflow: hidden;
+}
+.title-buttons h1 {
+    float: left;
+}
+.title-buttons .checkout-types {
+    float: right;
+}
+dd {
+    margin-bottom: 20px;
+}
+p {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+p.required {
+    font: 12px Tahoma, sans-serif;
+    color: #cc0000;
+    text-align: right;
+}
+.required em {
+    color: #cc0000;
+    margin-right: 3px;
 }
 a, button {
     text-decoration: none;
@@ -50,25 +81,51 @@ a:hover,
 button:hover {
     color: #421701;
 }
+address {
+    font: normal 12px Tahoma, sans-serif;
+}
 ul, ol {
     list-style: none;
+}
+.ul {
+    list-style: outside;
+    margin-left: 15px;
 }
 img{
     display: block;
 }
-input {
+label {
+    margin-bottom: 5px;
+    color: #7a2a01;
+    font: 12px Tahoma, sans-serif;
+    padding-left: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+.nobr {
+    white-space: nowrap;
+}
+.input-text {
     border: 1px solid #c99479;
     background: #f9ecd9;
-    color: #421701;
-    font-size: 13px;
-    padding: 1px 5px;
-    font-family: Tahoma, sans-serif;
+    padding: 0 10px;
+    height: 26px;
+    font: 13px Tahoma, sans-serif;
+    color: #9e5e3e;
+    border-radius: 2px;
+
+}
+.input-box {
+   margin-bottom: 10px;   
 }
 select{
     background: #f9ecd9; 
     border: 1px solid #c99479;
-    color: #421701;
+    color: #9e5e3e;
     padding: 0 7px;
+    margin-bottom: 10px;
+    height: 26px;
+    font: 13px Tahoma, sans-serif;
 }
 select option {
     padding-right: 10px;
@@ -109,7 +166,24 @@ button {
     float: right;
 }
 fieldset {
-    
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+}
+table {
+    width: 100%;
+}
+thead th {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 16px;
+    color: #f2debb;
+    padding: 14px 10px   8px;
+    background: url(../images/heading-bg.png) repeat-x 0 0;
+}
+td {
+    padding: 10px;
+    border: 1px solid #c4693b;
 }
 
 /* Header
@@ -204,58 +278,91 @@ fieldset {
     line-height: 25px;
     display: inline-block;
     vertical-align: middle;
+    margin: 0;
 }
-.breadcrumbs {
-    margin-bottom: 20px;
+#breadcrumbs {
+    height: 30px;
     color: #7a2a01;
     font-size: 12px;
 }
-.breadcrumbs li {
+#breadcrumbs li {
     display: inline;
     font-family: Georgia,serif;
 }
-.breadcrumbs a {
+#breadcrumbs a {
     color: #421701;
 }
 /* Content
    ========================================================================== */
-#main-container {
-    overflow: hidden;
+#main-container:after,
+#checkoutSteps .col2-set:after
+{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 #main {
     width: 670px;
-    float: left;
-    overflow: hidden;
     line-height: 22px;
+}
+.col1-layout #main {
+    width: auto;
+}
+.col2-left-layout #main {
+    float: right;
+}
+.col2-right-layout #main {
+    float: left;
 }
 
 /* Right Sidebar Blocks
    ========================================================================== */
-#right-sidebar {
+.sidebar {
     width: 260px;
-    float: right;
     line-height: 18px;
     font-size: 13px;
 }
-#right-sidebar h4 {
+#right-sidebar {
+    float: right;
+}
+#left-sidebar {
+    float: left;
+}
+.sidebar h4,
+.block-title
+{
     font-size: 20px;
+    line-height: 18px;
     font-style: italic;
     margin-bottom: 16px;
     padding-left: 7px;
 }
+.block-title strong {
+    font-weight: normal;
+}
 #right-sidebar .block {
     margin-bottom: 45px;
+}
+.block-account ul {
+    font-family: Tahoma;    
 }
 .block-list li {
     border-top: 1px dotted #9e5e3e;
     padding: 5px 7px;
 }
+.block-account li.current {
+    background: #e6d2b2;
+    padding-left: 25px;
+}
 .block-list li a {
     background: url(../images/link.png) no-repeat 0 3px;
     padding-left: 19px;
+    display: block;
+    text-decoration: none;
 }
 .block-list li:first-child {
-    padding-top: 0;
     border-top: 0 none;
 }
 .block-list li.last {
@@ -335,6 +442,20 @@ fieldset {
 }
 #pizza-hours p span {
     float: right;
+}
+/* Checkout progress
+======================================*/
+#checkout-progress-wrapper dt {
+    padding: 10px 7px 3px;
+    background: url(../images/address-bg.png) no-repeat 0 0;
+    font-size: 16px;
+    color: #f2dab6;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+#checkout-progress-wrapper dd {
+    margin-bottom: 10px;
+    padding: 0 7px;
 }
 
 /* Catalog
@@ -573,6 +694,169 @@ background-position: 0 -34px;
 #qty {
     width: 17px;
     text-align: center;
+}
+
+/* Cart
+   ========================================================================== */
+.cart-collaterals .col2-set {
+    overflow: hidden;
+}
+.cart-collaterals .col-2 {
+    float: right;
+}
+.cart-collaterals .col-2 h2 {
+    float: left;
+    padding: 20px 20px 0 0;
+    width: 190px;
+    font-size: 16px;
+}
+.cart-collaterals input {
+    width: 242px;
+}
+.discount-form,
+.shipping-form
+{
+    padding-left: 20px;
+    border-left: 1px solid #c4693b;
+    float: left;
+    padding: 20px;
+}
+.discount {
+    overflow: hidden;
+    border-bottom: 1px solid #c4693b;    
+}
+.shipping {
+    overflow: hidden;   
+}
+#shopping-cart-table tfoot td {
+    text-align: right;
+}
+#shopping-cart-table .btn-continue {
+    float: left;
+}
+.totals {
+    float: right;
+    width: 367px;
+}
+
+
+/* Checkout
+   ========================================================================== */
+#checkoutSteps label {
+    display: inline;
+}
+.active .step-title {
+    background: #c4693b;
+}
+.step-title {
+    background: #d08661;
+    line-height: 40px;
+    border-bottom: 1px solid #9e5e3e
+}
+
+.step-title span  {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background: #f9ecd9;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 12px;
+    color: #9e5e3e;
+    font: 10px Tahoma, sans-serif;
+
+}
+.step-title h2 {
+    color: #f2dab6;
+    font-size: 16px;
+}
+.step-title a {
+    display: none;
+}
+.step {
+    padding: 20px;
+}
+#checkout-step-login h3 {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px dotted #9e5e3e;
+    padding-bottom: 9px;
+    margin-bottom: 10px;
+}
+#checkoutSteps h4 {
+    font-weight: bold;
+}
+#checkoutSteps .col-1,
+#checkoutSteps .col-2 {
+    width: 290px;
+}
+#checkoutSteps .col-1 {
+    float: left;
+    border-right: 1px dotted #9e5e3e;
+    padding-right: 26px
+}
+#checkoutSteps .col-2 {
+    float: right;
+}
+#checkoutSteps .col-2 h3 {
+    padding-top: 22px;
+}
+.form-list {
+    margin-bottom: 10px;
+}
+
+#login-form input {
+    width: 268px;
+}
+.buttons-set {
+    overflow: hidden;
+}
+.buttons-set button.button {
+    float: right;
+}
+.buttons-set a,
+.buttons-set p {
+    line-height: 30px;
+    margin: 0
+}
+
+
+.form-list .fields {
+    overflow: hidden;
+}
+.form-list .field {
+    float: left;
+}
+.form-list .fields .field {
+    width: 305px;
+    margin-left: 20px;   
+}
+.form-list .fields .field:first-child {
+    margin-left: 0;
+}
+.form-list .input-text {
+    width: 283px;
+}
+.form-list .fields .input-text {
+    width: 283px;
+}
+.form-list .wide .input-text {
+    width: 608px
+}
+.form-list select {
+    width: 305px;
+}
+.validation-advice {
+    font: 12px Tahoma;
+    color: #cc0000;
+    padding: 2px  0 0 10px;
+}
+.validation-failed {
+    border-color: #cc0000;
+}
+.buttons-set .back-link {
+    float: left;
 }
 
 /* Footer

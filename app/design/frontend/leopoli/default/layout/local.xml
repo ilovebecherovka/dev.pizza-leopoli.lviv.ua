@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
-<!--layout>
+<layout>
     <default>
-        <remove name="paypal.partner.right.logo"/>      
+        <remove name="paypal.partner.right.logo"/>
+        <remove name="right.permanent.callout" /> 
+        <remove name="catalog.compare.sidebar" />
+        <remove name="left.permanent.callout" />
     </default>
-</layout-->
+</layout>

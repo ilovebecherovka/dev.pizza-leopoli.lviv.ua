@@ -27,9 +27,11 @@ h1,h2,h3,h4 {
     margin: 0;
     font-weight: normal;
     color: #421701;
+    font-family:  Georgia, serif;
 }
 h2 {
     font-style: italic;
+    margin-bottom: 20px;    
 }
 .product-name a {
     color: #421701;    
@@ -58,7 +60,6 @@ dd {
     margin-bottom: 20px;
 }
 p {
-    line-height: 20px;
     margin-bottom: 10px;
 }
 p.required {
@@ -82,7 +83,8 @@ button:hover {
     color: #421701;
 }
 address {
-    font: normal 12px Tahoma, sans-serif;
+    font-style: normal;
+    font-family: Tahoma;
 }
 ul, ol {
     list-style: none;
@@ -135,8 +137,7 @@ button {
     background: url(../images/menu-hover.png) no-repeat 0 0;
     padding-left: 30px;
     height: 30px;
-    font-size: 16px;
-    font-style: italic;
+    font: italic 16px Georgia, serif;
 }
 :focus {
     outline:none;
@@ -172,18 +173,20 @@ fieldset {
 }
 table {
     width: 100%;
+    white-space: nowrap;
 }
 thead th {
     font-weight: normal;
     font-style: italic;
     font-size: 16px;
     color: #f2debb;
-    padding: 14px 10px   8px;
+    padding: 8px 10px 1px;
     background: url(../images/heading-bg.png) repeat-x 0 0;
 }
 td {
-    padding: 10px;
+    padding: 5px 10px;
     border: 1px solid #c4693b;
+    font-family: Tahoma;
 }
 
 /* Header
@@ -214,7 +217,7 @@ td {
     display: block;
 }
 .welcome-msg {
-  font-style: italic;   
+
 }
 #search_mini_form {
     float: right;
@@ -345,16 +348,25 @@ td {
 #right-sidebar .block {
     margin-bottom: 45px;
 }
-.block-account ul {
-    font-family: Tahoma;    
-}
 .block-list li {
     border-top: 1px dotted #9e5e3e;
     padding: 5px 7px;
 }
+.block-account ul {
+    font-family: Tahoma;   
+    border: 1px solid #9e5e3e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.block-account li {
+    background: #F9E9CF; 
+    border-top: 1px solid #9e5e3e;
+}
 .block-account li.current {
-    background: #e6d2b2;
+    background: #9e5e3e;
     padding-left: 25px;
+    color: #fff;
+    
 }
 .block-list li a {
     background: url(../images/link.png) no-repeat 0 3px;
@@ -364,9 +376,6 @@ td {
 }
 .block-list li:first-child {
     border-top: 0 none;
-}
-.block-list li.last {
-    padding-bottom: 0;
 }
 /* Block Cart
 ======================================*/
@@ -750,7 +759,7 @@ background-position: 0 -34px;
 }
 .step-title {
     background: #d08661;
-    line-height: 40px;
+    line-height: 30px;
     border-bottom: 1px solid #9e5e3e
 }
 
@@ -762,10 +771,9 @@ background-position: 0 -34px;
     line-height: 15px;
     text-align: center;
     border-radius: 50%;
-    margin: 12px;
+    margin: 8px;
     color: #9e5e3e;
     font: 10px Tahoma, sans-serif;
-
 }
 .step-title h2 {
     color: #f2dab6;
@@ -857,6 +865,50 @@ background-position: 0 -34px;
 }
 .buttons-set .back-link {
     float: left;
+}
+
+/* Account
+   ========================================================================== */
+.box-account, .block {
+    margin-bottom: 20px;
+}
+.my-account .col2-set {
+    overflow: hidden;
+}
+.my-account .col-1,
+.my-account .col-2 {
+  width: 300px;  
+}
+.my-account .col-1 {
+    float: left;
+}
+.my-account .col-2 {
+    float: right;
+}
+.box-account .box-title {
+    border-bottom: 1px dotted #9e5e3e;
+    overflow: hidden;
+    text-align: right;
+}
+.box-account .box-title h3 {
+    float: left;
+}
+.box-title h3{
+    font-weight: bold;
+}
+.box-head {
+    text-align: right;
+    overflow: hidden;
+}
+.box-head h2 {
+    float: left;
+}
+.box-account ,.addresses-list, .fieldset {
+    border: 1px solid #9e5e3e;
+    padding: 18px;
+    background: #F9E9CF;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* Footer

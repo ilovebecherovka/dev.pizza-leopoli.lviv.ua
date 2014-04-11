@@ -436,3 +436,4 @@
 "Log Out","Log Out"
 "First Name","First Name"
 "Last Name","Last Name"
+"Maximum length must be less then %s symbols","Максимальна довжина тексту повинна бути менша, ніж %s символа"

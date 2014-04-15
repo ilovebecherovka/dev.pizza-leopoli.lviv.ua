@@ -186,4 +186,13 @@ Default layout, loads most of the pages
             <action method="setIsHandle"><applied>1</applied></action>
         </reference>
     </page_three_columns>
+    
+    <page_home translate="label">
+        <label>Home Page</label>
+        <reference name="root">
+            <action method="setTemplate"><template>cms/default/home.phtml</template></action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle"><applied>1</applied></action>
+        </reference>        
+    </page_home>
 </layout>

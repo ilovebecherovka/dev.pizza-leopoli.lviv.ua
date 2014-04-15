@@ -1,9 +1,24 @@
 <?xml version="1.0"?>
 <layout>
-    <default>
+    <default> 
         <remove name="paypal.partner.right.logo"/>
         <remove name="right.permanent.callout" /> 
         <remove name="catalog.compare.sidebar" />
         <remove name="left.permanent.callout" />
+        
+        
+        <reference name="right">
+            <block type="cms/block" name="cms_pizza_hours"  after="sale.reorder.sidebar">
+                <action method="setBlockId">
+                    <block_id>pizza_hours</block_id>
+                </action>
+            </block>
+   
+        </reference>
+        
     </default>
+
+
+    
+    
 </layout>

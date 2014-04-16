@@ -14,8 +14,13 @@
         </reference> 
     </default>
     <cms_index_index>
+        <remove name="cms.wrapper" />
         <reference name="content">
-               <action method="setForcedTitle"><title>sd</title></action>
+            <block type="cms/block" name="cms_childrens" before="-">
+                <action method="setBlockId">
+                    <block_id>childrens</block_id>
+                </action>
+            </block>     
         </reference>      
     </cms_index_index>    
 </layout>

@@ -429,6 +429,32 @@ td {
     padding: 0 7px;
 }
 
+/* Hot
+======================================*/
+#hot {
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+}
+#hot p {
+    font-size: 16px;
+    line-height: 23px;
+    color: #7a2a01;    
+}
+#hot h2 {
+    margin-bottom: 16px;
+}
+#hot .product-image {
+    margin-right: 15px;
+}
+/* New
+======================================*/
+#new {
+    float: left;
+}
+#new h2 {
+    margin-bottom: 15px;
+}
 /* Pizza Hours
 ======================================*/
 #pizza-hours {
@@ -436,10 +462,10 @@ td {
 }
 #pizza-hours address{
     background:url(../images/address-bg.png) no-repeat 0 0;
-    font-size: 16px;
     color: #f2dab6;
     padding: 10px 0 5px 15px;
     margin-bottom: 7px;
+    font: italic 16px Georgia, serif;
 }
 #pizza-hours p {
     font-family: Tahoma, sans-serif;
@@ -900,8 +926,6 @@ background-position: 0 -34px;
     font-style: italic;
 }
 
-
-
 .box-account .box-title {
     border-bottom: 1px dotted #9e5e3e;
     overflow: hidden;
@@ -929,7 +953,6 @@ background-position: 0 -34px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
 
 /* Footer
    ========================================================================== */

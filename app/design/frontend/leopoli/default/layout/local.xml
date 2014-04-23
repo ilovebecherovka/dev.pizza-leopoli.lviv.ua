@@ -15,6 +15,9 @@
     </default>
     <cms_index_index>
         <remove name="cms.wrapper" />
+        <reference name="right">
+            <remove name="sale.reorder.sidebar" />
+        </reference>
         <reference name="content">
             <block type="cms/block" name="cms_childrens" before="-">
                 <action method="setBlockId">

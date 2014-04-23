@@ -56,6 +56,21 @@ h2 {
 .title-buttons .checkout-types {
     float: right;
 }
+.image-border {
+    padding: 3px;
+    border: 1px dashed  #9d917a;
+    border-radius: 3px;
+    background: #ead0a1;
+}
+.padding-20 {
+    padding: 0 20px 20px;
+}
+dt {
+  font: italic 20px Georgia;
+  margin-bottom: 10px;
+  color: #421701;
+      
+}
 dd {
     margin-bottom: 20px;
 }
@@ -96,7 +111,11 @@ ul, ol {
 img{
     display: block;
 }
-label {
+textarea {
+    resize: none;
+    overflow: auto;
+}
+#main label {
     margin-bottom: 5px;
     color: #7a2a01;
     font: 12px Tahoma, sans-serif;
@@ -105,15 +124,16 @@ label {
 .nobr {
     white-space: nowrap;
 }
-.input-text {
+#main .input-text {
     border: 1px solid #c99479;
     background: #f9ecd9;
     padding: 0 10px;
-    height: 26px;
     font: 13px Tahoma, sans-serif;
     color: #9e5e3e;
     border-radius: 2px;
-
+}
+#main input.input-text {
+    height: 26px;
 }
 .input-box {
    margin-bottom: 10px;   
@@ -315,6 +335,9 @@ td {
 }
 .col2-right-layout #main {
     float: left;
+}
+#page-image {
+    margin-bottom: 20px;
 }
 
 /* Right Sidebar Blocks
@@ -535,13 +558,6 @@ background-position: 0 -34px;
 
 /* Product Items
 ======================================*/
-.category-image {
-    padding: 3px;
-    border: 1px dashed  #9d917a;
-    border-radius: 3px;
-    background: #ead0a1;
-    margin-bottom: 20px;
-}
 #category-products .product-name {
     font-size: 20px;
 }
@@ -866,7 +882,7 @@ background-position: 0 -34px;
 .form-list .fields .field:first-child {
     margin-left: 0;
 }
-.form-list .input-text {
+#main .form-list .input-text {
     width: 283px;
 }
 .form-list .fields .input-text {
@@ -946,7 +962,9 @@ background-position: 0 -34px;
 .box-head h2 {
     float: left;
 }
-.box-account ,.addresses-list, .fieldset {
+.box-account,
+.addresses-list, 
+.my-account .fieldset {
     border: 1px solid #9e5e3e;
     padding: 18px;
     background: #F9E9CF;
@@ -973,4 +991,53 @@ background-position: 0 -34px;
     height: 47px;
     line-height: 60px;
     background: url(../images/footer-bot-bg.png) repeat-x 0 0;
+}
+#footer .top-block .center {
+    overflow: hidden;
+}
+#footer h4 {
+    font: italic  20px Georgia, serif;
+    color: #c9784f
+}
+#footer .block {
+    float: left;
+    width: 190px;
+    margin-left: 30px;
+}
+#footer .block:first-child {
+    margin-left: 0;
+}
+#footer input,
+#footer textarea {
+    width: 174px;
+    border: 1px solid #f2dcb8;
+    background: #9e5e3e;
+    font: 11px Tahoma, sans-serif;
+    padding: 0 7px;
+}
+#footer input {
+    height: 20px;
+}
+#footer textarea {
+    height: 56px;
+}
+#footer label {
+    color: #f2dcbb;
+    font: 11px Tahoma, sans-serif;
+}
+#footer button {
+    color: #f2dcbb;
+    background: url(../images/footer-link.png) no-repeat;
+    float: none;
+}
+#footer #info {
+    width: 445px;
+} 
+#footer #about-us {
+    width: 265px;
+    font: 11px/16px Tahoma, sans-serif;  
+}
+#footer #about-us .image-border {
+    float: left;
+    margin-right: 10px;
 }

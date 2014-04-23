@@ -1,0 +1,29 @@
+<div class="block">
+    <h4><?php echo Mage::helper('contacts')->__('Зв\'язатися з нами') ?></h4>
+    <form action="<?php echo $this->getFormAction(); ?>" id="contact-form" method="post">
+        <ul class="form-list">
+            <li>
+                <label for="name" class="required"><?php echo Mage::helper('contacts')->__('Name:') ?></label>
+                <input name="name" id="name" title="<?php echo Mage::helper('contacts')->__('Name') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" />
+            </li>
+            <li>
+                <label for="email" class="required"><?php echo Mage::helper('contacts')->__('Email:') ?></label>
+                <input name="email" id="email" title="<?php echo Mage::helper('contacts')->__('Email') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="text" />
+            </li>
+            <li>
+                <label for="comment" class="required"><?php echo Mage::helper('contacts')->__('Comment') ?></label>
+                <textarea name="comment" id="comment" title="<?php echo Mage::helper('contacts')->__('Comment') ?>" class="required-entry input-text" cols="5" rows="3"></textarea>
+            </li>
+        </ul>
+        <div class="buttons-set">
+            <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
+            <button type="submit" title="<?php echo Mage::helper('contacts')->__('Submit') ?>" class="button"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
+        </div>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var contactForm = new VarienForm('contact-form', true);
+        console.log(contactForm);
+    //]]>
+    </script>
+</div>

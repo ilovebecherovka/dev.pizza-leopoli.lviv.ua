@@ -23,6 +23,25 @@ body {
 /*sidebar - footer line-height:18px;*/
 /* GLOBAL
    ========================================================================== */
+@font-face {
+    font-family: 'Segoe-Script';
+    src: url('../fonts/segoe_script/segoe_script-webfont.eot');
+    src: url('../fonts/segoe_script/segoe_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/segoe_script/segoe_script-webfont.woff') format('woff'),
+         url('../fonts/segoe_script/segoe_script-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe-Script-Bold';
+    src: url('../fonts/segoe_script_bold/segoe_script_bold-webfont.eot');
+    src: url('../fonts/segoe_script_bold/segoe_script_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/segoe_script_bold/segoe_script_bold-webfont.woff') format('woff'),
+         url('../fonts/segoe_script_bold/segoe_script_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 h1,h2,h3,h4 {
     margin: 0;
     font-weight: normal;
@@ -68,8 +87,7 @@ h2 {
 dt {
   font: italic 20px Georgia;
   margin-bottom: 10px;
-  color: #421701;
-      
+  color: #421701;  
 }
 dd {
     margin-bottom: 20px;
@@ -244,6 +262,9 @@ td {
     margin: 26px 0 2px 99px;
     overflow: hidden;    
 }
+#nav li {
+    float: left;
+}
 #nav a {
     font: italic 18px/36px Georgia, serif;
     height: 36px;
@@ -283,19 +304,43 @@ td {
     left: auto;
     right: -31px;
 }
+#slider .note {
+    width: 175px;
+    height: 311px;
+    background: url(../images/note.png) no-repeat 0 0;
+    text-align: center;
+    position: absolute;
+    right: 31px;
+    top: -6px;
+    z-index: 99;
+    padding: 59px 30px 0;
+}
+#slider h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+#slider p {
+    font: 16px/22px 'Segoe-Script-Bold', serif;
+    color: #7a2a01;
+}
+#home-desc {
+    font: 21px/27px 'Segoe-Script-Bold', serif;
+    color: #7a2a01;
+    text-align: center;
+    margin-bottom: 36px;
+}
 #text-block {
-    width: 890px;
+    width: 800px;
     height: 112px;
     background: url(../images/text-block.png) no-repeat 0 0;
     color: #7a2a01;
     line-height: 112px;
     text-align: center;
     font-style: italic;
-    padding: 0 40px;
+    padding: 0 80px;
 }
 #text-block p {
-    font-size: 20px;
-    line-height: 25px;
+    font: 21px/27px 'Segoe-Script-Bold', serif; 
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -455,20 +500,21 @@ td {
 /* Hot
 ======================================*/
 #hot {
-    width: 400px;
+    width: 415px;
     float: left;
-    margin-right: 20px;
+    margin-right: 17px;
 }
 #hot p {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 24px;
     color: #7a2a01;    
 }
 #hot h2 {
+    font-size: 25px;
     margin-bottom: 16px;
 }
 #hot .product-image {
-    margin-right: 15px;
+    margin-right: 13px;
 }
 /* New
 ======================================*/
@@ -849,10 +895,9 @@ background-position: 0 -34px;
 #checkoutSteps .col-2 h3 {
     padding-top: 22px;
 }
-.form-list {
+#main .form-list {
     margin-bottom: 10px;
 }
-
 #login-form input {
     width: 268px;
 }
@@ -867,8 +912,6 @@ background-position: 0 -34px;
     line-height: 30px;
     margin: 0
 }
-
-
 .form-list .fields {
     overflow: hidden;
 }
@@ -985,7 +1028,7 @@ background-position: 0 -34px;
 #footer .top-block {
     background: #7a2a01;
     color: #f2dcbb;
-    padding: 10px 0 20px;
+    padding: 7px 0 20px;
 }
 #footer .bot-block {
     height: 47px;
@@ -997,7 +1040,8 @@ background-position: 0 -34px;
 }
 #footer h4 {
     font: italic  20px Georgia, serif;
-    color: #c9784f
+    color: #c9784f;
+    margin-bottom: 14px;
 }
 #footer .block {
     float: left;
@@ -1007,6 +1051,10 @@ background-position: 0 -34px;
 #footer .block:first-child {
     margin-left: 0;
 }
+
+#footer #contact {
+    line-height: 1;
+}
 #footer input,
 #footer textarea {
     width: 174px;
@@ -1015,27 +1063,39 @@ background-position: 0 -34px;
     font: 11px Tahoma, sans-serif;
     padding: 0 7px;
 }
-#footer input {
-    height: 20px;
-}
-#footer textarea {
-    height: 56px;
-}
 #footer label {
     color: #f2dcbb;
     font: 11px Tahoma, sans-serif;
+    display: block;
+    margin-bottom: 2px;
+    padding-left: 4px;
+}
+#footer input {
+    height: 20px;
+    margin-bottom: 5px;
+}
+#footer textarea {
+    height: 56px;
+    margin-bottom: 4px;
 }
 #footer button {
     color: #f2dcbb;
     background: url(../images/footer-link.png) no-repeat;
     float: none;
+    font-size: 12px;
 }
+
 #footer #info {
-    width: 445px;
+    width: 465px;
 } 
+
 #footer #about-us {
-    width: 265px;
-    font: 11px/16px Tahoma, sans-serif;  
+    width: 245px;
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+}
+#footer #about-us h4 {
+    margin-bottom: 20px;
 }
 #footer #about-us .image-border {
     float: left;

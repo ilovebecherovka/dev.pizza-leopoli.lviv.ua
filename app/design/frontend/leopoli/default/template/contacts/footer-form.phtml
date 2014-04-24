@@ -1,4 +1,4 @@
-<div class="block">
+<div id="contact" class="block">
     <h4><?php echo Mage::helper('contacts')->__('Зв\'язатися з нами') ?></h4>
     <form action="<?php echo $this->getFormAction(); ?>" id="contact-form" method="post">
         <ul class="form-list">
@@ -22,8 +22,7 @@
     </form>
     <script type="text/javascript">
     //<![CDATA[
-        var contactForm = new VarienForm('contact-form', true);
-        console.log(contactForm);
+        var contactForm = new VarienForm('contact-form', false);
     //]]>
     </script>
 </div>

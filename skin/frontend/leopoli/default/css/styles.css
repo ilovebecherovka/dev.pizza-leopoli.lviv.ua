@@ -148,7 +148,7 @@ textarea {
     padding: 0 10px;
     font: 13px Tahoma, sans-serif;
     color: #9e5e3e;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 #main input.input-text {
     height: 26px;
@@ -223,7 +223,14 @@ td {
     border: 1px solid #c4693b;
     font-family: Tahoma;
 }
-
+.col2-set:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
 /* Header
    ========================================================================== */
 #quick-access {
@@ -338,6 +345,7 @@ td {
     text-align: center;
     font-style: italic;
     padding: 0 80px;
+    margin-bottom: 10px;
 }
 #text-block p {
     font: 21px/27px 'Segoe-Script-Bold', serif; 
@@ -1013,6 +1021,42 @@ background-position: 0 -34px;
     background: #F9E9CF;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+/* Login /Registration Forms
+   ========================================================================== */
+.col2-set .col-1 {
+    float: left;
+}
+.col2-set .col-2 {
+    float: right;
+}
+.control .input-box {
+    float: left;
+}
+.account-create .fieldset,
+.account-create .buttons-set,
+.account-login .col-1,
+.account-login .col-2 {
+    background: #f9ecd9;
+    padding: 10px 20px;
+    /*box-shadow: 0 1px 1px rgba(0,0,0,0.3);*/
+    border: 1px solid #9e5e3e;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.account-login .col-1,
+.account-login .col-2 {
+    width: 425px;
+}
+.account-login .content {
+    height: 248px;
+}
+.account-login h2,
+.account-create h2 {
+    border-bottom: 1px dotted #421701;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 /* Footer

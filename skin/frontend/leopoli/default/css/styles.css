@@ -99,6 +99,7 @@ p.required {
     font: 12px Tahoma, sans-serif;
     color: #cc0000;
     text-align: right;
+    margin: 0;
 }
 .required em {
     color: #cc0000;
@@ -142,7 +143,7 @@ textarea {
 .nobr {
     white-space: nowrap;
 }
-#main .input-text {
+.input-text {
     border: 1px solid #c99479;
     background: #f9ecd9;
     padding: 0 10px;
@@ -209,6 +210,7 @@ fieldset {
 table {
     width: 100%;
     white-space: nowrap;
+    margin-bottom: 20px;
 }
 thead th {
     font-weight: normal;
@@ -222,6 +224,21 @@ td {
     padding: 5px 10px;
     border: 1px solid #c4693b;
     font-family: Tahoma;
+}
+tbody, tfoot {
+    background: #f9ecd9;
+}
+.light-block {
+    background: #f9ecd9;
+    padding: 10px 20px;
+    border: 1px solid #9e5e3e;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.light-block h2 {
+    border-bottom: 1px dotted #421701;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
 }
 .col2-set:after {
     content: ".";
@@ -345,7 +362,7 @@ td {
     text-align: center;
     font-style: italic;
     padding: 0 80px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 #text-block p {
     font: 21px/27px 'Segoe-Script-Bold', serif; 
@@ -428,11 +445,11 @@ td {
 .block-account ul {
     font-family: Tahoma;   
     border: 1px solid #9e5e3e;
-    border-radius: 10px;
+    border-radius: 3px;
     overflow: hidden;
 }
 .block-account li {
-    background: #F9E9CF; 
+    background: #f9ecd9; 
     border-top: 1px solid #9e5e3e;
 }
 .block-account li.current {
@@ -800,46 +817,17 @@ background-position: 0 -34px;
 
 /* Cart
    ========================================================================== */
-.cart-collaterals .col2-set {
-    overflow: hidden;
+.cart-collaterals .discount,
+.cart-collaterals .shipping {
+    background: #f9ecd9;
+    padding: 10px 20px;
+    border: 1px solid #9e5e3e;
+    margin-bottom: 20px;
 }
-.cart-collaterals .col-2 {
-    float: right;
-}
-.cart-collaterals .col-2 h2 {
-    float: left;
-    padding: 20px 20px 0 0;
-    width: 190px;
-    font-size: 16px;
-}
-.cart-collaterals input {
-    width: 242px;
-}
-.discount-form,
-.shipping-form
-{
-    padding-left: 20px;
-    border-left: 1px solid #c4693b;
-    float: left;
-    padding: 20px;
-}
-.discount {
-    overflow: hidden;
-    border-bottom: 1px solid #c4693b;    
-}
-.shipping {
-    overflow: hidden;   
-}
-#shopping-cart-table tfoot td {
-    text-align: right;
-}
-#shopping-cart-table .btn-continue {
-    float: left;
-}
-.totals {
-    float: right;
-    width: 367px;
-}
+
+
+
+
 
 
 /* Checkout
@@ -876,7 +864,12 @@ background-position: 0 -34px;
     display: none;
 }
 .step {
-    padding: 20px;
+    background: #f9ecd9;
+    padding: 10px 20px;
+    border: 1px solid #9e5e3e;
+}
+.step input {
+    background: #fcf6ec
 }
 #checkout-step-login h3 {
     font-size: 14px;
@@ -905,9 +898,6 @@ background-position: 0 -34px;
 }
 #main .form-list {
     margin-bottom: 10px;
-}
-#login-form input {
-    width: 268px;
 }
 .buttons-set {
     overflow: hidden;
@@ -1017,10 +1007,10 @@ background-position: 0 -34px;
 .addresses-list, 
 .my-account .fieldset {
     border: 1px solid #9e5e3e;
-    padding: 18px;
-    background: #F9E9CF;
-    border-radius: 10px;
+    padding: 10px 20px;
+    background: #f9ecd9;
     margin-bottom: 20px;
+    border-radius: 3px;
 }
 
 /* Login /Registration Forms
@@ -1031,32 +1021,45 @@ background-position: 0 -34px;
 .col2-set .col-2 {
     float: right;
 }
+.messages {
+    width: 100%;
+    overflow: hidden;
+}
+.messages  {
+    margin-bottom: 20px;
+}
+.error-msg, 
+.success-msg, 
+.note-msg, 
+.notice-msg {
+    border-style: solid;
+    border-width: 1px;
+    background-position: 20px 50%;
+    background-repeat: no-repeat;
+    padding: 8px 40px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.error-msg {
+    border-color: #cc0000;
+    background-color: #faebe7;
+    background-image: url(../images/i_msg-error.gif);
+    color: #cc0000;
+}
 .control .input-box {
     float: left;
-}
-.account-create .fieldset,
-.account-create .buttons-set,
-.account-login .col-1,
-.account-login .col-2 {
-    background: #f9ecd9;
-    padding: 10px 20px;
-    /*box-shadow: 0 1px 1px rgba(0,0,0,0.3);*/
-    border: 1px solid #9e5e3e;
-    margin-bottom: 20px;
-    border-radius: 3px;
 }
 .account-login .col-1,
 .account-login .col-2 {
     width: 425px;
 }
 .account-login .content {
-    height: 248px;
+    min-height: 228px;
 }
-.account-login h2,
-.account-create h2 {
-    border-bottom: 1px dotted #421701;
-    padding-bottom: 12px;
-    margin-bottom: 15px;
+.account-login input,
+.account-create input {
+    background: #fcf6ec;
 }
 
 /* Footer

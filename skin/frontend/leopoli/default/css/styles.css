@@ -55,7 +55,7 @@ h2 {
     color: #421701;    
 }
 .page-title {
-    border-bottom: 2px dotted #9e5e3e;
+    border-bottom: 1px dashed #9e5e3e;
     padding: 0 0 5px 20px;
     margin-bottom: 20px;
 }
@@ -108,6 +108,7 @@ p.required {
 a, button {
     text-decoration: none;
     color: #7a2a01;
+    transition: all 0.4s ease;
 }
 a:hover {
     text-decoration: underline;
@@ -192,6 +193,7 @@ button {
     border: 1px dashed #9d917a;
     border-radius: 3px;
     float: left;
+    margin-right: 20px;
 }
 .product-name {
     font-style: italic;
@@ -228,6 +230,44 @@ td {
 tbody, tfoot {
     background: #f9ecd9;
 }
+.col2-set .col-1 {
+    float: left;
+}
+.col2-set .col-2 {
+    float: right;
+}
+.messages {
+    width: 100%;
+    overflow: hidden;
+}
+.messages  {
+    margin-bottom: 20px;
+}
+.error-msg, 
+.success-msg, 
+.note-msg, 
+.notice-msg {
+    border-style: solid;
+    border-width: 1px;
+    background-position: 20px 50%;
+    background-repeat: no-repeat;
+    padding: 8px 40px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.error-msg {
+    border-color: #cc0000;
+    background-color: #faebe7;
+    background-image: url(../images/i_msg-error.gif);
+    color: #cc0000;
+}
+.success-msg {
+    border-color: #446423;
+    background-color: #eff5ea;
+    background-image: url(../images/i_msg-success.gif);
+    color: #3d6611;
+}
 .light-block {
     background: #f9ecd9;
     padding: 10px 20px;
@@ -239,6 +279,9 @@ tbody, tfoot {
     border-bottom: 1px dotted #421701;
     padding-bottom: 12px;
     margin-bottom: 15px;
+}
+.light-block input {
+    background: #fcf6ec;
 }
 .col2-set:after {
     content: ".";
@@ -638,7 +681,7 @@ background-position: 0 -34px;
     line-height:1;
 }
 #category-products .item {
-    border-bottom: 2px dotted #9e5e3e;
+    border-bottom: 1px dashed #9e5e3e;
     overflow: hidden;
 }
 /* Products Grid
@@ -690,26 +733,37 @@ background-position: 0 -34px;
 }
 
 .products-list .left {
-    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px dashed #9e5e3e;   
+}
+.products-list .right {
+    text-align: center;
+    width: 100px;
+    padding: 0 20px;
+}
+.products-list .add {
+    background: #f9ecdb;
+    text-align: center;
+    padding: 5px 0;
+    border-top: 3px solid #ead0a1;
 }
 .products-list .product-shop {
-    position: relative;
-    padding: 0 150px 0 230px;
+    float: left;
+    width: 221px;
 }
+
 .products-list .item {
     padding: 20px 0 22px;
+    position: relative;
 }
 .products-list .item:first-child {
-    border-top: 2px dotted #9e5e3e;
+    border-top: 1px dashed #9e5e3e;
     padding-top: 22px;
 }
 .products-list .product-name {
     margin-bottom: 15px;
 }
 .products-list .price-box {
-    position: absolute;
-    right: 0;
-    top: 0;
     font-size: 18px;
 }
 
@@ -719,9 +773,32 @@ background-position: 0 -34px;
     padding-left: 17px;
 }
 .products-list .btn-cart {
+    background: #b6845e;
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: #f2dcbb;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 20px;
+    top: 50%;
+    margin-top: -15px;
+    border-radius: 3px;
+}
+.products-list .item:hover .btn-cart {
+    background: #9e5e3e;
+}
+
+.old-price {
+    background: url(../images/old-price3.png) no-repeat 0 0;
+}
+.link-wishlist {
+    background: url(../images/like.png) no-repeat 0 0;
+    padding-left: 31px;
+    height: 29px;
+    display: inline-block;
+    font-style: italic;
+    padding-top: 3px;
 }
 
 
@@ -1015,51 +1092,11 @@ background-position: 0 -34px;
 
 /* Login /Registration Forms
    ========================================================================== */
-.col2-set .col-1 {
-    float: left;
-}
-.col2-set .col-2 {
-    float: right;
-}
-.messages {
-    width: 100%;
-    overflow: hidden;
-}
-.messages  {
-    margin-bottom: 20px;
-}
-.error-msg, 
-.success-msg, 
-.note-msg, 
-.notice-msg {
-    border-style: solid;
-    border-width: 1px;
-    background-position: 20px 50%;
-    background-repeat: no-repeat;
-    padding: 8px 40px;
-    font-size: 11px;
-    font-weight: bold;
-    border-radius: 3px;
-}
-.error-msg {
-    border-color: #cc0000;
-    background-color: #faebe7;
-    background-image: url(../images/i_msg-error.gif);
-    color: #cc0000;
-}
-.control .input-box {
-    float: left;
-}
-.account-login .col-1,
-.account-login .col-2 {
+#account-login .light-block{
     width: 425px;
 }
-.account-login .content {
-    min-height: 228px;
-}
-.account-login input,
-.account-create input {
-    background: #fcf6ec;
+#account-login .light-block .content {
+    min-height: 228px;    
 }
 
 /* Footer

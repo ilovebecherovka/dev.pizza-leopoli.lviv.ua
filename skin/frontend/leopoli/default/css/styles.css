@@ -108,7 +108,7 @@ p.required {
 a, button {
     text-decoration: none;
     color: #7a2a01;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
 a:hover {
     text-decoration: underline;
@@ -193,7 +193,6 @@ button {
     border: 1px dashed #9d917a;
     border-radius: 3px;
     float: left;
-    margin-right: 20px;
 }
 .product-name {
     font-style: italic;
@@ -219,16 +218,22 @@ thead th {
     font-style: italic;
     font-size: 16px;
     color: #f2debb;
-    padding: 8px 10px 1px;
-    background: url(../images/heading-bg.png) repeat-x 0 0;
+    background: #9e5e3e;
+    line-height: 40px;
 }
 td {
     padding: 5px 10px;
-    border: 1px solid #c4693b;
-    font-family: Tahoma;
+    font-style: italic;
 }
-tbody, tfoot {
-    background: #f9ecd9;
+tbody td {
+  border: 1px dashed #c4693b;    
+}
+tfoot {
+    background: #b6845e;
+    color: #F2DCBB
+}
+tfoot button {
+    color: #F2DCBB
 }
 .col2-set .col-1 {
     float: left;
@@ -263,14 +268,14 @@ tbody, tfoot {
     color: #cc0000;
 }
 .success-msg {
-    border-color: #446423;
-    background-color: #eff5ea;
+    border-color: #6e9e3e;
+    background-color: #e6f2ce;
     background-image: url(../images/i_msg-success.gif);
-    color: #3d6611;
+    color: #6e9e3e;
 }
 .light-block {
     background: #f9ecd9;
-    padding: 10px 20px;
+    padding: 10px 18px;
     border: 1px solid #9e5e3e;
     margin-bottom: 20px;
     border-radius: 3px;
@@ -615,12 +620,14 @@ tbody, tfoot {
 /* Checkout progress
 ======================================*/
 #checkout-progress-wrapper dt {
-    padding: 10px 7px 3px;
-    background: url(../images/address-bg.png) no-repeat 0 0;
+    padding: 0 10px;
+    background: #b6845e;
     font-size: 16px;
     color: #f2dab6;
     font-style: italic;
-    margin-bottom: 10px;
+    margin: 0;
+    line-height: 30px;
+    border-bottom: 1px solid #9e5e3e;
 }
 #checkout-progress-wrapper dd {
     margin-bottom: 10px;
@@ -733,13 +740,16 @@ background-position: 0 -34px;
 }
 
 .products-list .left {
-    padding-right: 20px;
+    padding: 20px 20px 21px 0;
     border-right: 1px dashed #9e5e3e;   
+}
+.products-list .product-image {
+    margin-right: 20px;
 }
 .products-list .right {
     text-align: center;
     width: 100px;
-    padding: 0 20px;
+    padding: 20px;
 }
 .products-list .add {
     background: #f9ecdb;
@@ -753,12 +763,10 @@ background-position: 0 -34px;
 }
 
 .products-list .item {
-    padding: 20px 0 22px;
     position: relative;
 }
 .products-list .item:first-child {
     border-top: 1px dashed #9e5e3e;
-    padding-top: 22px;
 }
 .products-list .product-name {
     margin-bottom: 15px;
@@ -894,29 +902,25 @@ background-position: 0 -34px;
 
 /* Cart
    ========================================================================== */
-.cart-collaterals .discount,
-.cart-collaterals .shipping {
-    background: #f9ecd9;
-    padding: 10px 20px;
-    border: 1px solid #9e5e3e;
-    margin-bottom: 20px;
+#shopping-cart-table .product-image {
+    border: 0 none;
 }
-
-
-
-
-
-
+#shopping-cart-table tbody td:first-child {
+    padding: 0;
+}
+#shopping-cart-table h2 {
+    font-size: 16px;
+}
 /* Checkout
    ========================================================================== */
 #checkoutSteps label {
     display: inline;
 }
 .active .step-title {
-    background: #c4693b;
+    background: #9e5e3e;
 }
 .step-title {
-    background: #d08661;
+    background: #b6845e;
     line-height: 30px;
     border-bottom: 1px solid #9e5e3e
 }
@@ -941,9 +945,7 @@ background-position: 0 -34px;
     display: none;
 }
 .step {
-    background: #f9ecd9;
     padding: 10px 20px;
-    border: 1px solid #9e5e3e;
 }
 .step input {
     background: #fcf6ec
@@ -1093,7 +1095,7 @@ background-position: 0 -34px;
 /* Login /Registration Forms
    ========================================================================== */
 #account-login .light-block{
-    width: 425px;
+    width: 432px;
 }
 #account-login .light-block .content {
     min-height: 228px;    

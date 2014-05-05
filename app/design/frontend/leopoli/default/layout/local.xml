@@ -5,6 +5,7 @@
         <remove name="right.permanent.callout" /> 
         <remove name="catalog.compare.sidebar" />
         <remove name="left.permanent.callout" />
+
         <reference name="right">
             <block type="cms/block" name="cms_pizza_hours"  after="sale.reorder.sidebar">
                 <action method="setBlockId">
@@ -13,6 +14,7 @@
             </block>
         </reference> 
     </default>
+    
     <cms_index_index>
         <remove name="cms.wrapper" />
         <reference name="right">
@@ -25,5 +27,9 @@
                 </action>
             </block>     
         </reference>      
-    </cms_index_index>    
+    </cms_index_index>
+    
+    <checkout_cart_index>
+         <remove name="checkout.cart.shipping" />       
+    </checkout_cart_index>
 </layout>

@@ -139,7 +139,6 @@ textarea {
     margin-bottom: 5px;
     color: #7a2a01;
     font: 12px Tahoma, sans-serif;
-    margin-bottom: 5px;
 }
 .nobr {
     white-space: nowrap;
@@ -165,6 +164,7 @@ select{
     padding: 0 7px;
     height: 26px;
     font: 13px Tahoma, sans-serif;
+    border-radius: 3px;
 }
 select option {
     padding-right: 10px;
@@ -215,15 +215,15 @@ table {
 }
 thead th {
     font-weight: normal;
-    font-style: italic;
-    font-size: 16px;
+    font: italic  16px Georgia, serif;
     color: #f2debb;
     background: #9e5e3e;
     line-height: 40px;
+    text-align: center;
+    
 }
 td {
     padding: 5px 10px;
-    font-style: italic;
 }
 tbody td {
   border: 1px dashed #c4693b;    
@@ -231,6 +231,9 @@ tbody td {
 tfoot {
     background: #b6845e;
     color: #F2DCBB
+}
+tfoot td {
+    border-bottom: 1px solid #9e5e3e
 }
 tfoot button {
     color: #F2DCBB
@@ -252,26 +255,20 @@ tfoot button {
 .success-msg, 
 .note-msg, 
 .notice-msg {
-    border-style: solid;
-    border-width: 1px;
-    background-position: 20px 50%;
-    background-repeat: no-repeat;
-    padding: 8px 40px;
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
     border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+   color: #f2debb;
 }
 .error-msg {
-    border-color: #cc0000;
-    background-color: #faebe7;
-    background-image: url(../images/i_msg-error.gif);
-    color: #cc0000;
+    background-color: #d15252;
 }
 .success-msg {
-    border-color: #6e9e3e;
-    background-color: #e6f2ce;
-    background-image: url(../images/i_msg-success.gif);
-    color: #6e9e3e;
+    background-color: #3e9e5e;
+    background-color: #41a684;
+ 
 }
 .light-block {
     background: #f9ecd9;
@@ -624,7 +621,7 @@ tfoot button {
 #checkout-progress-wrapper dt {
     padding: 0 10px;
     background: #b6845e;
-    font-size: 16px;
+    font-size: 14px;
     color: #f2dab6;
     font-style: italic;
     margin: 0;
@@ -915,6 +912,9 @@ background-position: 0 -34px;
 }
 /* Checkout
    ========================================================================== */
+#checkoutSteps {
+    font-family: Tahoma, sans-serif;
+}
 #checkoutSteps label {
     display: inline;
 }
@@ -930,14 +930,14 @@ background-position: 0 -34px;
 .step-title span {
     float: left;
     width: 15px;
-    height: 15px;
-    background: #f9ecd9;
     line-height: 15px;
+    height: 15px;
+    background: #f2dab6;
     text-align: center;
     border-radius: 50%;
-    margin: 12px;
+    margin: 13px;
     color: #9e5e3e;
-    font: 10px Tahoma, sans-serif;
+    font: 10px Tahoma;
 }
 .step-title h2 {
     color: #f2dab6;
@@ -948,30 +948,32 @@ background-position: 0 -34px;
 }
 .step {
     padding: 10px 18px;
-    border: 1px solid #9e5e3e;
-    background: #f9ecd9;
+    border-left: 1px dashed #9e5e3e;
+    border-right: 1px dashed #9e5e3e;
 }
-.step input {
-    background: #fcf6ec
+#opc-review .step {
+    border-bottom: 1px dashed #9e5e3e;    
 }
 #checkout-step-login h3 {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12px;
     border-bottom: 1px dotted #9e5e3e;
     padding-bottom: 9px;
     margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
 }
 #checkoutSteps h4 {
     font-weight: bold;
+    font-size: 12px;
 }
 #checkoutSteps .col-1,
 #checkoutSteps .col-2 {
-    width: 290px;
+    width: 296px;
 }
 #checkoutSteps .col-1 {
     float: left;
-    border-right: 1px dotted #9e5e3e;
-    padding-right: 26px
+    border-right: 1px dashed #9e5e3e;
+    padding-right: 20px
 }
 #checkoutSteps .col-2 {
     float: right;
@@ -980,7 +982,7 @@ background-position: 0 -34px;
     padding-top: 22px;
 }
 #main .form-list {
-    margin-bottom: 10px;
+
 }
 .buttons-set {
     overflow: hidden;
@@ -1009,6 +1011,12 @@ background-position: 0 -34px;
 #main .form-list .input-text {
     width: 283px;
 }
+#main .form-list .wide .input-text {
+    width: 608px;
+}
+#main .form-list .wide select {
+    width: 630px;
+}
 .form-list .fields .input-text {
     width: 283px;
 }
@@ -1017,6 +1025,13 @@ background-position: 0 -34px;
 }
 .form-list select {
     width: 305px;
+}
+#main .form-list .input-box .v-fix {
+    float: left;
+    margin-right: 20px;
+}
+#main .form-list .input-box .v-fix select {
+    width: 142px
 }
 .validation-advice {
     font: 12px Tahoma;
@@ -1029,24 +1044,56 @@ background-position: 0 -34px;
 .buttons-set .back-link {
     float: left;
 }
+.form-list li {
+    
+}
+.form-list li.control {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.form-list li.control input.radio, 
+.form-list li.control input.checkbox {
+    margin-right: 6px;
+    float: left;
+    margin-top: 1px;
+}
+.form-list li.control label {
+    float: left;
+}
+
+#checkout-shipping-method-load dt {
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: bold;    
+}
+#checkoutSteps dt {
+    margin-bottom: 0;
+}
+#checkoutSteps dd {
+    margin-bottom: 10px;
+}
+.sp-methods .agreement-content {
+    padding-left: 17px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 11px;
+}
+
 
 /* Account
    ========================================================================== */
+.box-head {
+    border-bottom: 1px dotted #421701;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    line-height: 1;
+    padding-left: 10px;
+}
 .box-account, .block {
     margin-bottom: 20px;
 }
-.my-account .col2-set {
-    overflow: hidden;
-}
-.my-account .col-1,
-.my-account .col-2 {
-  width: 300px;  
-}
-.my-account .col-1 {
-    float: left;
-}
-.my-account .col-2 {
-    float: right;
+.my-account {
+    font-family: Tahoma;
 }
 .my-account .limiter {
     text-align: right;
@@ -1055,29 +1102,52 @@ background-position: 0 -34px;
     float: left;
     margin: 0;
 }
-.my-account h2 {
-    margin-bottom: 10px;
-}
-.my-account h3 {
-    font-weight: bold;
-    font-size: 13px;
-}
 .my-account h4 {
     font-style: italic;
-}
-
-.box-account .box-title {
-    border-bottom: 1px dotted #9e5e3e;
-    overflow: hidden;
-    text-align: right;
-    margin-bottom: 5px;
-    padding-bottom: 4px;
-}
-.box-account .box-title h3 {
-    float: left;
-}
-.box-title h3{
     font-weight: bold;
+    font-size: 12px;
+    border-bottom: 1px dotted #9e5e3e;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+.my-account .col2-set {
+    margin-bottom: 15px;
+}
+.my-account .col-1,
+.my-account .col-2 {
+    width: 325px;
+}
+.my-account .col-1 {
+    border-right: 1px dotted #9e5e3e;
+    padding-right: 10px;
+}
+.my-account .box .col-1,
+.my-account .box .col-2 {
+    width: 305px;
+}
+.my-account .box .col-1 {
+    padding-right: 20px;
+}
+.box-title {
+    text-align: right;
+    background: #9e5e3e;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+}
+.box-title h3 {
+    float: left;
+    color: #F2DCBB;
+}
+.box-title h3 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+}
+.box-content {
+    padding: 15px 10px;
 }
 .box-head {
     text-align: right;
@@ -1086,14 +1156,13 @@ background-position: 0 -34px;
 .box-head h2 {
     float: left;
 }
-.box-account,
-.addresses-list, 
-.my-account .fieldset {
-    border: 1px solid #9e5e3e;
-    padding: 10px 20px;
-    background: #f9ecd9;
-    margin-bottom: 20px;
-    border-radius: 3px;
+#my-orders-table thead th {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#my-orders-table td {
+    border-style: dotted
 }
 
 /* Login /Registration Forms

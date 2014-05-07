@@ -220,7 +220,7 @@ thead th {
     background: #9e5e3e;
     line-height: 40px;
     text-align: center;
-    
+    padding: 0 10px;
 }
 td {
     padding: 5px 10px;
@@ -270,7 +270,7 @@ tfoot button {
     background-color: #41a684;
  
 }
-.light-block {
+.light-block, .box-account {
     background: #f9ecd9;
     padding: 10px 18px;
     border: 1px solid #9e5e3e;
@@ -926,7 +926,6 @@ background-position: 0 -34px;
     line-height: 40px;
     border-bottom: 1px solid #9e5e3e
 }
-
 .step-title span {
     float: left;
     width: 15px;
@@ -1079,7 +1078,6 @@ background-position: 0 -34px;
     font-size: 11px;
 }
 
-
 /* Account
    ========================================================================== */
 .box-head {
@@ -1116,7 +1114,7 @@ background-position: 0 -34px;
 }
 .my-account .col-1,
 .my-account .col-2 {
-    width: 325px;
+    width: 306px;
 }
 .my-account .col-1 {
     border-right: 1px dotted #9e5e3e;
@@ -1124,7 +1122,7 @@ background-position: 0 -34px;
 }
 .my-account .box .col-1,
 .my-account .box .col-2 {
-    width: 305px;
+    width: 286px;
 }
 .my-account .box .col-1 {
     padding-right: 20px;

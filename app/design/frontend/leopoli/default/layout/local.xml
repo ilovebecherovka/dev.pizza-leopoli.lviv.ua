@@ -5,7 +5,7 @@
         <remove name="right.permanent.callout" /> 
         <remove name="catalog.compare.sidebar" />
         <remove name="left.permanent.callout" />
-
+        
         <reference name="right">
             <block type="cms/block" name="cms_pizza_hours"  after="sale.reorder.sidebar">
                 <action method="setBlockId">

@@ -134,6 +134,7 @@ img{
 textarea {
     resize: none;
     overflow: auto;
+    width: 100%;
 }
 #main label {
     margin-bottom: 5px;
@@ -210,7 +211,7 @@ fieldset {
 }
 table {
     width: 100%;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     margin-bottom: 20px;
 }
 thead th {
@@ -221,6 +222,7 @@ thead th {
     line-height: 40px;
     text-align: center;
     padding: 0 10px;
+    border-right: 1px solid #9e5e3e;
 }
 td {
     padding: 5px 10px;
@@ -238,6 +240,9 @@ tfoot td {
 tfoot button {
     color: #F2DCBB
 }
+.a-center {
+    text-align: center;
+}
 .col2-set .col-1 {
     float: left;
 }
@@ -247,8 +252,6 @@ tfoot button {
 .messages {
     width: 100%;
     overflow: hidden;
-}
-.messages  {
     margin-bottom: 20px;
 }
 .error-msg, 
@@ -260,14 +263,15 @@ tfoot button {
     border-radius: 3px;
     text-align: center;
     line-height: 40px;
-   color: #f2debb;
+    color: #f2debb;
 }
 .error-msg {
     background-color: #d15252;
 }
 .success-msg {
-    background-color: #3e9e5e;
-    background-color: #41a684;
+    background: #3e9e5e;
+    background: #41a684;
+    background: #1f7f5c
  
 }
 .light-block, .box-account {
@@ -282,7 +286,19 @@ tfoot button {
     padding-bottom: 12px;
     margin-bottom: 15px;
 }
-.light-block input {
+.light-block h3 {
+    background: #9e5e3e;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    font-style: italic;
+    font-size: 14px;
+    color: #F2DCBB;
+    margin-bottom: 15px;
+}
+.light-block input,
+.light-block select {
     background: #fcf6ec;
 }
 .col2-set:after {
@@ -293,6 +309,7 @@ tfoot button {
     line-height: 0;
     height: 0;
 }
+
 /* Header
    ========================================================================== */
 #quick-access {
@@ -750,7 +767,11 @@ background-position: 0 -34px;
     width: 100px;
     padding: 20px;
 }
-.products-list .add {
+.more-views {
+    background: #f9ecdb; 
+    margin-top: 5px;
+}
+.like {
     background: #f9ecdb;
     text-align: center;
     padding: 5px 0;
@@ -867,12 +888,12 @@ background-position: 0 -34px;
     margin-right: 20px;
 }
 
-
 /* Product View
    ========================================================================== */
 #product-view .product-shop {
-    position: relative;
-    padding-left: 326px;
+  float: left;
+  width: 200px;
+
 }
 #product-view .price-box {
     font-size: 20px;
@@ -880,16 +901,16 @@ background-position: 0 -34px;
 #product-view .product-name {
     margin-bottom: 15px;
 }
-.short-description {
-    padding-right: 110px;
-    text-align: justify;
-    margin-bottom: 15px;
+#product-view .product-image {
+    margin-right: 20px;
 }
-#product-view .product-image-zoom {
-    width: 298px;
-    height: 224px;
-    position: relative;
-    overflow: hidden;
+#product-view .left {
+  padding-right: 20px;
+  border-right: 1px dashed #9e5e3e    
+}
+.short-description {
+
+    margin-bottom: 15px;
 }
 .product-collateral {
     clear: both;
@@ -1134,6 +1155,7 @@ background-position: 0 -34px;
     height: 30px;
     line-height: 30px;
     border-radius: 3px;
+    margin-bottom: 15px;
 }
 .box-title h3 {
     float: left;
@@ -1145,7 +1167,7 @@ background-position: 0 -34px;
     font-size: 12px;
 }
 .box-content {
-    padding: 15px 10px;
+    padding: 0 10px;
 }
 .box-head {
     text-align: right;
@@ -1154,6 +1176,9 @@ background-position: 0 -34px;
 .box-head h2 {
     float: left;
 }
+.box-head a {
+    line-height: 20px;
+}
 #my-orders-table thead th {
     line-height: 30px;
     font-size: 14px;
@@ -1161,6 +1186,21 @@ background-position: 0 -34px;
 
 #my-orders-table td {
     border-style: dotted
+}
+#my-orders-table .link-view,
+#my-orders-table .link-reorder {
+    height: 14px;
+    background: url(../images/view-repeat.png) no-repeat 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+#my-orders-table .link-view {
+    width: 20px
+}
+#my-orders-table .link-reorder {
+    width: 16px;
+    background-position: 100% 0;
 }
 
 /* Login /Registration Forms

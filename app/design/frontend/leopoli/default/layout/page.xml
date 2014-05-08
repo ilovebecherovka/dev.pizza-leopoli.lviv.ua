@@ -48,12 +48,22 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>varien/menu.js</script></action>
                 <action method="addJs"><script>mage/translate.js</script></action>
                 <action method="addJs"><script>mage/cookies.js</script></action>
-
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
-                
                 <action method="addCss"><stylesheet>css/normalize.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
                 <action method="addItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/jquery-1.11.1.min.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/jquery.zoom.min.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/script.js</name>
+                </action>
             </block>
 
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">

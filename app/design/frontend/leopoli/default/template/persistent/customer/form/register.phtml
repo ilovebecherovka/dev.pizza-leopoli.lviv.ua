@@ -39,7 +39,7 @@
     <?php echo $this->getChildHtml('form_fields_before')?>
     <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
     <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate">
-        <div class="fieldset">
+        <div class="fieldset light-block">
             <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
             <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
             <h2 class="legend"><?php echo $this->__('Personal Information') ?></h2>
@@ -76,7 +76,7 @@
             </ul>
         </div>
     <?php if($this->getShowAddressFields()): ?>
-        <div class="fieldset">
+        <div class="fieldset light-block">
             <input type="hidden" name="create_address" value="1" />
             <h2 class="legend"><?php echo $this->__('Address Information') ?></h2>
             <ul class="form-list">
@@ -150,7 +150,7 @@
             <input type="hidden" name="default_shipping" value="1" />
         </div>
     <?php endif; ?>
-        <div class="fieldset">
+        <div class="fieldset light-block">
             <h2 class="legend"><?php echo $this->__('Login Information') ?></h2>
             <ul class="form-list">
                 <li class="fields">
@@ -172,7 +172,7 @@
             </ul>
             <?php echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
         </div>
-        <div class="buttons-set">
+        <div class="buttons-set light-block">
             <p class="required"><?php echo $this->__('* Required Fields') ?></p>
             <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>" class="back-link"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
             <button type="submit" title="<?php echo $this->__('Submit') ?>" class="button"><span><span><?php echo $this->__('Submit') ?></span></span></button>

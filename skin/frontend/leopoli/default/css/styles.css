@@ -177,6 +177,15 @@ button {
     height: 30px;
     font: italic 16px Georgia, serif;
 }
+.btn-checkout {
+	background: #9e3737;
+	background: #9e463e;
+	color: #fff;
+	padding: 0 20px;
+	font-size: 14px;
+	height: 40px;
+	border-radius: 3px;
+}
 :focus {
     outline:none;
 }
@@ -211,15 +220,14 @@ fieldset {
 }
 table {
     width: 100%;
-    /*white-space: nowrap;*/
     margin-bottom: 20px;
 }
 thead th {
     font-weight: normal;
-    font: italic  16px Georgia, serif;
-    color: #f2debb;
+    font: italic 14px Georgia, serif;
+    color: #f9ecd9;
     background: #9e5e3e;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     padding: 0 10px;
     border-right: 1px solid #9e5e3e;
@@ -228,17 +236,21 @@ td {
     padding: 5px 10px;
 }
 tbody td {
-  border: 1px dashed #c4693b;    
+  border: 1px dotted #9e5e3e;
+  background: #f4e1c2;
 }
+tbody tr:first-child td {
+	border-top: 0 none;
+} 
 tfoot {
     background: #b6845e;
-    color: #F2DCBB
+    color: #f9ecd9
 }
 tfoot td {
     border-bottom: 1px solid #9e5e3e
 }
 tfoot button {
-    color: #F2DCBB
+    color: #f9ecd9
 }
 .a-center {
     text-align: center;
@@ -250,20 +262,21 @@ tfoot button {
     float: right;
 }
 .messages {
-    width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
+}
+.messages a {
+	color: #f9ecd9;
 }
 .error-msg, 
 .success-msg, 
 .note-msg, 
 .notice-msg {
-    font-size: 18px;
-    font-style: italic;
+    font: italic 16px/20px Georgia, serif;
     border-radius: 3px;
     text-align: center;
-    line-height: 40px;
     color: #f2debb;
+	padding: 10px 40px;
 }
 .error-msg {
     background-color: #d15252;
@@ -276,13 +289,16 @@ tfoot button {
 }
 .light-block, .box-account {
     background: #f9ecd9;
+	background: #f4e1c2;
     padding: 10px 18px;
     border: 1px solid #9e5e3e;
+	border: 1px solid #cca382;
     margin-bottom: 20px;
     border-radius: 3px;
 }
 .light-block h2 {
     border-bottom: 1px dotted #421701;
+	border-bottom: 1px dotted #b6845e;
     padding-bottom: 12px;
     margin-bottom: 15px;
 }
@@ -293,13 +309,9 @@ tfoot button {
     border-radius: 3px;
     font-style: italic;
     font-size: 14px;
-    color: #F2DCBB;
+    color: #f9ecd9;
     margin-bottom: 15px;
     padding: 0 10px;
-}
-.light-block input,
-.light-block select {
-    background: #fcf6ec;
 }
 .col2-set:after {
     content: ".";
@@ -823,7 +835,7 @@ background-position: 0 -34px;
     border-radius: 3px;
 }
 .products-list .item:hover .btn-cart {
-    background: #9e5e3e;
+    background: #9e463e;
 }
 
 .old-price .price {
@@ -985,6 +997,10 @@ background-position: 0 -34px;
 }
 /* Cart
    ========================================================================== */
+#shopping-cart-table thead th {
+	line-height: 40px;
+	font-size: 16px;
+}
 #shopping-cart-table .product-image {
     border: 0 none;
 }
@@ -994,6 +1010,18 @@ background-position: 0 -34px;
 #shopping-cart-table h2 {
     font-size: 16px;
 }
+#cart-collaterals {
+	width: 620px;
+	float: right;
+}
+#cart-collaterals .col-1,
+#cart-collaterals .col-2 {
+	width: 262px;
+}
+#discount-coupon-form input {
+	width: 240px;
+}
+
 /* Checkout
    ========================================================================== */
 #checkoutSteps {
@@ -1031,8 +1059,9 @@ background-position: 0 -34px;
 }
 .step {
     padding: 10px 18px;
-    border-left: 1px dashed #9e5e3e;
-    border-right: 1px dashed #9e5e3e;
+    border-left: 1px solid #cca382;
+    border-right: 1px solid #cca382;
+	background: #f4e1c2;
 }
 #opc-review .step {
     border-bottom: 1px dashed #9e5e3e;    
@@ -1222,11 +1251,12 @@ background-position: 0 -34px;
 }
 .box-title h3 {
     float: left;
-    color: #F2DCBB;
-}
-.box-title h3 {
+    color: #f9ecd9;
     font-style: italic;
     font-size: 14px;
+}
+.box-title a {
+	color: #f3debc
 }
 .box-content {
     padding: 0 10px;
@@ -1240,10 +1270,6 @@ background-position: 0 -34px;
 }
 .box-head a {
     line-height: 20px;
-}
-#my-orders-table thead th {
-    line-height: 30px;
-    font-size: 14px;
 }
 
 #my-orders-table .link-view,
@@ -1307,7 +1333,6 @@ background-position: 0 -34px;
 #footer .block:first-child {
     margin-left: 0;
 }
-
 #footer #contact {
     line-height: 1;
 }
@@ -1340,11 +1365,9 @@ background-position: 0 -34px;
     float: none;
     font-size: 12px;
 }
-
 #footer #info {
     width: 465px;
-} 
-
+}
 #footer #about-us {
     width: 245px;
     font-family: Tahoma, sans-serif;

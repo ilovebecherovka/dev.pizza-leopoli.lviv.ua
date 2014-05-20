@@ -1031,3 +1031,6 @@
 "Automatic (equalize price ranges)","Автоматична (зрівняти цінові діапазони)"
 "Automatic (equalize product counts)","Автоматична (зрівняти підрахунок продукції)"
 "Manual","Вручну"
+"If there is an account associated with %s you will receive an email with a link to reset your password.","На електронну адресу: %s буде надіслано лист з посиланням на відновлення паролю."
+"Reset a Password","Відновлення паролю"
+"Your password has been updated.","Пароль було успішно оновлено"

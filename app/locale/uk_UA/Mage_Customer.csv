@@ -416,7 +416,6 @@
 "Email Address","Email Address"
 "Password","Password"
 "* Required Fields","* Required Fields"
-"Retrieve your password here","Retrieve your password here"
 "Please enter your email below and we'll send you a new password.","Please enter your email below and we'll send you a new password."
 "Back to Login","Back to Login"
 "Account Information","Account Information"
@@ -431,3 +430,5 @@
 "Validate VAT Number","Підтвердити ідентифікаційний номер платника ПДВ"
 "You are now logged out","Ви вийшли з системи"
 "You have logged out and will be redirected to our homepage in 5 seconds.","Ви вийшли, і будете перенаправлені на головну сторінку нашого сайту протягом 5 секунд."
+"Reset a Password","Відновлення паролю"
+"The address has been saved.","Адресу було успішно збережено."

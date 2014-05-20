@@ -178,13 +178,17 @@ button {
     font: italic 16px Georgia, serif;
 }
 .btn-checkout {
-	background: #9e3737;
-	background: #9e463e;
-	color: #fff;
+        background: #9e5e3e;
+	color: #F2DCBB;
 	padding: 0 20px;
-	font-size: 14px;
+	font-size: 16px;
 	height: 40px;
 	border-radius: 3px;
+}
+.btn-checkout:hover {
+    color: #F2DCBB;
+    background: #913101;
+    
 }
 :focus {
     outline:none;
@@ -974,7 +978,6 @@ background-position: 0 -34px;
     top: 6px;
     left: 20px;
     background: url(../images/plus-minus.png) no-repeat 0 0;
-    cursor: pointer;
 }
 .count .inc {
     background-position: 100% 0;

@@ -105,6 +105,7 @@ Default layout, loads most of the pages
             </block>
 
             <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
+                <block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml"/>
                 <!--block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml"/-->                
                 <block type="core/template" name="contactForm" template="contacts/footer-form.phtml"/>
                 <block type="cms/block" name="cms_about_us_footer">
